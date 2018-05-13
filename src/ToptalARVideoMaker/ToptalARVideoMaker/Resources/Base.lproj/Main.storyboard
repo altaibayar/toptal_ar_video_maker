@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h6e-fj-zAJ">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Permission View Controller-->
+        <scene sceneID="5oa-ry-elc">
+            <objects>
+                <viewController id="h6e-fj-zAJ" customClass="PermissionViewController" customModule="ToptalARVideoMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ULU-oq-tgg" customClass="PermissionView" customModule="ToptalARVideoMaker" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This app needs some permissions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jne-Ff-qUh">
+                                <rect key="frame" x="40" y="84" width="295" height="63.333333333333343"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="r0q-a0-vMP" userLabel="V1">
+                                <rect key="frame" x="40" y="317.33333333333331" width="295" height="177.66666666666669"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="01h-l4-4ki" userLabel="H1">
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="48.333333333333336"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UlY-o6-T5c" userLabel="V11">
+                                                <rect key="frame" x="0.0" y="0.0" width="206" height="48.333333333333336"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Camera" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSH-8b-PVc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="68.333333333333329" height="24"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Obviously because this is an AR app" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ag-0c-vPH">
+                                                        <rect key="frame" x="0.0" y="34" width="206" height="14.333333333333336"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b5J-3U-6xE">
+                                                <rect key="frame" x="246" y="0.0" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="ykr-eF-RjR"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="tNz-q2-frd" userLabel="H2">
+                                        <rect key="frame" x="0.0" y="88.333333333333371" width="295" height="89.333333333333314"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0Vg-Bi-Oc9" userLabel="V12">
+                                                <rect key="frame" x="0.0" y="0.0" width="206" height="89.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="To Save Recorded Video" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2U-Yc-a1H">
+                                                        <rect key="frame" x="0.0" y="0.0" width="160.66666666666666" height="49"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Video you have recorded will be stored into your gallery" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ign-E3-evS">
+                                                        <rect key="frame" x="0.0" y="59.000000000000007" width="183.33333333333334" height="30.333333333333336"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IED-DY-qnB">
+                                                <rect key="frame" x="246" y="0.0" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="1Zn-TF-BMd"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wl1-1E-4ZC">
+                                <rect key="frame" x="0.0" y="748" width="375" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Sdj-ak-Exh"/>
+                                </constraints>
+                                <state key="normal" title="Next"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aMX-0a-LZJ" firstAttribute="trailing" secondItem="r0q-a0-vMP" secondAttribute="trailing" constant="40" id="6sl-Ds-szg"/>
+                            <constraint firstItem="Jne-Ff-qUh" firstAttribute="top" secondItem="aMX-0a-LZJ" secondAttribute="top" constant="40" id="BQQ-kK-Kdk"/>
+                            <constraint firstItem="aMX-0a-LZJ" firstAttribute="trailing" secondItem="Jne-Ff-qUh" secondAttribute="trailing" constant="40" id="ClY-je-4RX"/>
+                            <constraint firstItem="wl1-1E-4ZC" firstAttribute="leading" secondItem="aMX-0a-LZJ" secondAttribute="leading" id="DpS-bE-nwb"/>
+                            <constraint firstItem="r0q-a0-vMP" firstAttribute="leading" secondItem="aMX-0a-LZJ" secondAttribute="leading" constant="40" id="ovZ-SL-uzV"/>
+                            <constraint firstAttribute="bottom" secondItem="wl1-1E-4ZC" secondAttribute="bottom" id="qAx-p4-chL"/>
+                            <constraint firstItem="Jne-Ff-qUh" firstAttribute="leading" secondItem="aMX-0a-LZJ" secondAttribute="leading" constant="40" id="rbi-gc-l8I"/>
+                            <constraint firstItem="r0q-a0-vMP" firstAttribute="centerY" secondItem="ULU-oq-tgg" secondAttribute="centerY" id="rzn-Mj-cbY"/>
+                            <constraint firstItem="wl1-1E-4ZC" firstAttribute="trailing" secondItem="aMX-0a-LZJ" secondAttribute="trailing" id="yJ8-GW-nIg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aMX-0a-LZJ"/>
+                        <connections>
+                            <outlet property="cameraSwitch" destination="b5J-3U-6xE" id="QJP-mh-qh9"/>
+                            <outlet property="nextButton" destination="wl1-1E-4ZC" id="9IL-Sk-3X2"/>
+                            <outlet property="photosSwitch" destination="IED-DY-qnB" id="bq0-U4-a6Z"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <segue destination="BV1-FR-VrT" kind="show" identifier="main" id="J8x-NY-ZKV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O7B-T9-tLB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1402.4000000000001" y="116.74876847290641"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="MainViewController" customModule="ToptalARVideoMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gH1-O7-ymy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="NHa-wx-Txc"/>
+                    </view>
+                    <connections>
+                        <segue destination="hzq-bu-Mc7" kind="show" identifier="export" id="dkY-zr-DDE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-540" y="116"/>
+        </scene>
+        <!--Export View Controller-->
+        <scene sceneID="HVh-dv-Xod">
+            <objects>
+                <viewController id="hzq-bu-Mc7" customClass="ExportViewController" customModule="ToptalARVideoMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k7H-7H-iMZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nR8-o6-e2p"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wmx-wH-4ec" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="349" y="115"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD62C2AA20A8582700AE9BAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62C2A920A8582700AE9BAF /* AppDelegate.swift */; };
+		AD62C2AC20A8582700AE9BAF /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = AD62C2AB20A8582700AE9BAF /* art.scnassets */; };
+		AD62C2B120A8582700AE9BAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD62C2AF20A8582700AE9BAF /* Main.storyboard */; };
+		AD62C2B320A8582800AE9BAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD62C2B220A8582800AE9BAF /* Assets.xcassets */; };
+		AD62C2B620A8582800AE9BAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD62C2B420A8582800AE9BAF /* LaunchScreen.storyboard */; };
+		ADB0953F20A859A000152750 /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0953E20A859A000152750 /* PermissionViewController.swift */; };
+		ADB0954120A859AC00152750 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0954020A859AC00152750 /* MainViewController.swift */; };
+		ADB0954320A859B900152750 /* ExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0954220A859B900152750 /* ExportViewController.swift */; };
+		ADB0954520A85A5F00152750 /* PermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0954420A85A5F00152750 /* PermissionView.swift */; };
+		ADB0954A20A85AA600152750 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0954920A85AA600152750 /* MainView.swift */; };
+		ADB0954D20A85ADE00152750 /* ExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0954C20A85ADE00152750 /* ExportView.swift */; };
+		ADB0955420A86EDD00152750 /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0955320A86EDD00152750 /* NextButton.swift */; };
+		ADB0955720A86EFE00152750 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0955620A86EFE00152750 /* UIColorExtensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AD62C2A620A8582700AE9BAF /* ToptalARVideoMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToptalARVideoMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD62C2A920A8582700AE9BAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD62C2AB20A8582700AE9BAF /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		AD62C2B020A8582700AE9BAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD62C2B220A8582800AE9BAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD62C2B520A8582800AE9BAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD62C2B720A8582800AE9BAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADB0953E20A859A000152750 /* PermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewController.swift; sourceTree = "<group>"; };
+		ADB0954020A859AC00152750 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		ADB0954220A859B900152750 /* ExportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportViewController.swift; sourceTree = "<group>"; };
+		ADB0954420A85A5F00152750 /* PermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionView.swift; sourceTree = "<group>"; };
+		ADB0954920A85AA600152750 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		ADB0954C20A85ADE00152750 /* ExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportView.swift; sourceTree = "<group>"; };
+		ADB0955320A86EDD00152750 /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
+		ADB0955620A86EFE00152750 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD62C2A320A8582700AE9BAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD62C29D20A8582700AE9BAF = {
+			isa = PBXGroup;
+			children = (
+				AD62C2A820A8582700AE9BAF /* ToptalARVideoMaker */,
+				AD62C2A720A8582700AE9BAF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD62C2A720A8582700AE9BAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD62C2A620A8582700AE9BAF /* ToptalARVideoMaker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD62C2A820A8582700AE9BAF /* ToptalARVideoMaker */ = {
+			isa = PBXGroup;
+			children = (
+				AD62C2B720A8582800AE9BAF /* Info.plist */,
+				AD62C2A920A8582700AE9BAF /* AppDelegate.swift */,
+				ADB0955020A85AFB00152750 /* Classes */,
+				ADB0955120A85B0100152750 /* SCNNodes */,
+				ADB0955220A85B2400152750 /* Views */,
+				ADB0953B20A8585500152750 /* Screens */,
+				ADB0953D20A8585F00152750 /* Resources */,
+			);
+			path = ToptalARVideoMaker;
+			sourceTree = "<group>";
+		};
+		ADB0953B20A8585500152750 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				ADB0954B20A85AAB00152750 /* ExportViewController */,
+				ADB0954720A85A8A00152750 /* MainViewController */,
+				ADB0954620A85A6E00152750 /* PermissionViewController */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		ADB0953D20A8585F00152750 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD62C2AB20A8582700AE9BAF /* art.scnassets */,
+				AD62C2B220A8582800AE9BAF /* Assets.xcassets */,
+				AD62C2AF20A8582700AE9BAF /* Main.storyboard */,
+				AD62C2B420A8582800AE9BAF /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ADB0954620A85A6E00152750 /* PermissionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ADB0954420A85A5F00152750 /* PermissionView.swift */,
+				ADB0953E20A859A000152750 /* PermissionViewController.swift */,
+			);
+			path = PermissionViewController;
+			sourceTree = "<group>";
+		};
+		ADB0954720A85A8A00152750 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ADB0954920A85AA600152750 /* MainView.swift */,
+				ADB0954020A859AC00152750 /* MainViewController.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		ADB0954B20A85AAB00152750 /* ExportViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ADB0954C20A85ADE00152750 /* ExportView.swift */,
+				ADB0954220A859B900152750 /* ExportViewController.swift */,
+			);
+			path = ExportViewController;
+			sourceTree = "<group>";
+		};
+		ADB0955020A85AFB00152750 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ADB0955520A86EEF00152750 /* Extensions */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		ADB0955120A85B0100152750 /* SCNNodes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SCNNodes;
+			sourceTree = "<group>";
+		};
+		ADB0955220A85B2400152750 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ADB0955320A86EDD00152750 /* NextButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ADB0955520A86EEF00152750 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ADB0955620A86EFE00152750 /* UIColorExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD62C2A520A8582700AE9BAF /* ToptalARVideoMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD62C2BA20A8582800AE9BAF /* Build configuration list for PBXNativeTarget "ToptalARVideoMaker" */;
+			buildPhases = (
+				AD62C2A220A8582700AE9BAF /* Sources */,
+				AD62C2A320A8582700AE9BAF /* Frameworks */,
+				AD62C2A420A8582700AE9BAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToptalARVideoMaker;
+			productName = ToptalARVideoMaker;
+			productReference = AD62C2A620A8582700AE9BAF /* ToptalARVideoMaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD62C29E20A8582700AE9BAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = tsevealt;
+				TargetAttributes = {
+					AD62C2A520A8582700AE9BAF = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = AD62C2A120A8582700AE9BAF /* Build configuration list for PBXProject "ToptalARVideoMaker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD62C29D20A8582700AE9BAF;
+			productRefGroup = AD62C2A720A8582700AE9BAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD62C2A520A8582700AE9BAF /* ToptalARVideoMaker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD62C2A420A8582700AE9BAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD62C2AC20A8582700AE9BAF /* art.scnassets in Resources */,
+				AD62C2B620A8582800AE9BAF /* LaunchScreen.storyboard in Resources */,
+				AD62C2B320A8582800AE9BAF /* Assets.xcassets in Resources */,
+				AD62C2B120A8582700AE9BAF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD62C2A220A8582700AE9BAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADB0955720A86EFE00152750 /* UIColorExtensions.swift in Sources */,
+				ADB0954520A85A5F00152750 /* PermissionView.swift in Sources */,
+				ADB0954A20A85AA600152750 /* MainView.swift in Sources */,
+				ADB0953F20A859A000152750 /* PermissionViewController.swift in Sources */,
+				AD62C2AA20A8582700AE9BAF /* AppDelegate.swift in Sources */,
+				ADB0954320A859B900152750 /* ExportViewController.swift in Sources */,
+				ADB0954120A859AC00152750 /* MainViewController.swift in Sources */,
+				ADB0955420A86EDD00152750 /* NextButton.swift in Sources */,
+				ADB0954D20A85ADE00152750 /* ExportView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AD62C2AF20A8582700AE9BAF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD62C2B020A8582700AE9BAF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD62C2B420A8582800AE9BAF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD62C2B520A8582800AE9BAF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD62C2B820A8582800AE9BAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD62C2B920A8582800AE9BAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD62C2BB20A8582800AE9BAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AASY6PM5S9;
+				INFOPLIST_FILE = ToptalARVideoMaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vrexlab.kydy.ToptalARVideoMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD62C2BC20A8582800AE9BAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AASY6PM5S9;
+				INFOPLIST_FILE = ToptalARVideoMaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vrexlab.kydy.ToptalARVideoMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD62C2A120A8582700AE9BAF /* Build configuration list for PBXProject "ToptalARVideoMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD62C2B820A8582800AE9BAF /* Debug */,
+				AD62C2B920A8582800AE9BAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD62C2BA20A8582800AE9BAF /* Build configuration list for PBXNativeTarget "ToptalARVideoMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD62C2BB20A8582800AE9BAF /* Debug */,
+				AD62C2BC20A8582800AE9BAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD62C29E20A8582700AE9BAF /* Project object */;
+}
