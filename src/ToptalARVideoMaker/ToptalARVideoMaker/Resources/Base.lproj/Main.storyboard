@@ -49,6 +49,9 @@
                                             </stackView>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b5J-3U-6xE">
                                                 <rect key="frame" x="246" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchValueChanged:" destination="ULU-oq-tgg" eventType="valueChanged" id="Bq7-N1-dKs"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                         <constraints>
@@ -77,6 +80,9 @@
                                             </stackView>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IED-DY-qnB">
                                                 <rect key="frame" x="246" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchValueChanged:" destination="ULU-oq-tgg" eventType="valueChanged" id="fsg-WV-K5Q"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                         <constraints>
@@ -85,12 +91,16 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wl1-1E-4ZC">
-                                <rect key="frame" x="0.0" y="748" width="375" height="64"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wl1-1E-4ZC" customClass="NextButton" customModule="ToptalARVideoMaker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="732" width="375" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="Sdj-ak-Exh"/>
+                                    <constraint firstAttribute="height" constant="80" id="Sdj-ak-Exh"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonTouchUpInside:" destination="ULU-oq-tgg" eventType="touchUpInside" id="6H6-fU-eFP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

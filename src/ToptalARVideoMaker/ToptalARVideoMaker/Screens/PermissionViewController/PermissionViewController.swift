@@ -19,6 +19,8 @@ class PermissionViewController: UIViewController {
         super.viewDidLoad();
 
         permissionView.delegate = self;
+        permissionView.cameraAccessManager = CameraManager();
+        permissionView.galleryAccessManager = GalleryManager();
     }
 }
 

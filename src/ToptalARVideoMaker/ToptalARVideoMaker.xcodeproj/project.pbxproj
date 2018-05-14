@@ -12,6 +12,9 @@
 		AD62C2B120A8582700AE9BAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD62C2AF20A8582700AE9BAF /* Main.storyboard */; };
 		AD62C2B320A8582800AE9BAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD62C2B220A8582800AE9BAF /* Assets.xcassets */; };
 		AD62C2B620A8582800AE9BAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD62C2B420A8582800AE9BAF /* LaunchScreen.storyboard */; };
+		AD8C95FB20A9AFFB00586B71 /* AccessRequestedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8C95FA20A9AFFB00586B71 /* AccessRequestedManager.swift */; };
+		AD8C95FD20A9B01500586B71 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8C95FC20A9B01500586B71 /* CameraManager.swift */; };
+		AD8C95FF20A9B03000586B71 /* GalleryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8C95FE20A9B03000586B71 /* GalleryManager.swift */; };
 		ADB0953F20A859A000152750 /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0953E20A859A000152750 /* PermissionViewController.swift */; };
 		ADB0954120A859AC00152750 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0954020A859AC00152750 /* MainViewController.swift */; };
 		ADB0954320A859B900152750 /* ExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0954220A859B900152750 /* ExportViewController.swift */; };
@@ -30,6 +33,9 @@
 		AD62C2B220A8582800AE9BAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD62C2B520A8582800AE9BAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD62C2B720A8582800AE9BAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD8C95FA20A9AFFB00586B71 /* AccessRequestedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessRequestedManager.swift; sourceTree = "<group>"; };
+		AD8C95FC20A9B01500586B71 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		AD8C95FE20A9B03000586B71 /* GalleryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryManager.swift; sourceTree = "<group>"; };
 		ADB0953E20A859A000152750 /* PermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewController.swift; sourceTree = "<group>"; };
 		ADB0954020A859AC00152750 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ADB0954220A859B900152750 /* ExportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +85,24 @@
 				ADB0953D20A8585F00152750 /* Resources */,
 			);
 			path = ToptalARVideoMaker;
+			sourceTree = "<group>";
+		};
+		AD8C95F820A9AFC400586B71 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				AD8C95F920A9AFD300586B71 /* AccessRequest */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		AD8C95F920A9AFD300586B71 /* AccessRequest */ = {
+			isa = PBXGroup;
+			children = (
+				AD8C95FA20A9AFFB00586B71 /* AccessRequestedManager.swift */,
+				AD8C95FC20A9B01500586B71 /* CameraManager.swift */,
+				AD8C95FE20A9B03000586B71 /* GalleryManager.swift */,
+			);
+			path = AccessRequest;
 			sourceTree = "<group>";
 		};
 		ADB0953B20A8585500152750 /* Screens */ = {
@@ -132,6 +156,7 @@
 		ADB0955020A85AFB00152750 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AD8C95F820A9AFC400586B71 /* Managers */,
 				ADB0955520A86EEF00152750 /* Extensions */,
 			);
 			path = Classes;
@@ -238,9 +263,12 @@
 				ADB0953F20A859A000152750 /* PermissionViewController.swift in Sources */,
 				AD62C2AA20A8582700AE9BAF /* AppDelegate.swift in Sources */,
 				ADB0954320A859B900152750 /* ExportViewController.swift in Sources */,
+				AD8C95FF20A9B03000586B71 /* GalleryManager.swift in Sources */,
 				ADB0954120A859AC00152750 /* MainViewController.swift in Sources */,
 				ADB0955420A86EDD00152750 /* NextButton.swift in Sources */,
+				AD8C95FB20A9AFFB00586B71 /* AccessRequestedManager.swift in Sources */,
 				ADB0954D20A85ADE00152750 /* ExportView.swift in Sources */,
+				AD8C95FD20A9B01500586B71 /* CameraManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
