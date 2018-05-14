@@ -15,12 +15,23 @@ class PermissionViewController: UIViewController {
         return self.view as! PermissionView;
     }
 
+    private let cameraAccessManager: AccessRequestedManager = CameraManager();
+    private let galleryAccessManager: AccessRequestedManager = GalleryManager();
+
     override func viewDidLoad() {
         super.viewDidLoad();
 
         permissionView.delegate = self;
-        permissionView.cameraAccessManager = CameraManager();
-        permissionView.galleryAccessManager = GalleryManager();
+        permissionView.cameraAccessManager = self.cameraAccessManager;
+        permissionView.galleryAccessManager = self.galleryAccessManager;
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated);
+
+        if self.cameraAccessManager.stateDetermined && self.galleryAccessManager.stateDetermined {
+            self.performSegue(withIdentifier: "main", sender: nil);
+        }
     }
 }
 

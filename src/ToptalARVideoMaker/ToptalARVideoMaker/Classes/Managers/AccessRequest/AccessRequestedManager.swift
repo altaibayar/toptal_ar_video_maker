@@ -14,5 +14,14 @@ enum AccessState {
 
 protocol AccessRequestedManager {
     var currentState: AccessState { get }
+
     func withRequestedAccess(_ completion: @escaping (Bool) -> Swift.Void );
+}
+
+extension AccessRequestedManager {
+
+    var stateDetermined: Bool {
+        let state = self.currentState;
+        return state != .unknown;
+    }
 }
