@@ -15,6 +15,7 @@
 		AD8C95FB20A9AFFB00586B71 /* AccessRequestedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8C95FA20A9AFFB00586B71 /* AccessRequestedManager.swift */; };
 		AD8C95FD20A9B01500586B71 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8C95FC20A9B01500586B71 /* CameraManager.swift */; };
 		AD8C95FF20A9B03000586B71 /* GalleryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8C95FE20A9B03000586B71 /* GalleryManager.swift */; };
+		AD8C960120A9D04100586B71 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8C960020A9D04100586B71 /* RecordButton.swift */; };
 		ADB0953F20A859A000152750 /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0953E20A859A000152750 /* PermissionViewController.swift */; };
 		ADB0954120A859AC00152750 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0954020A859AC00152750 /* MainViewController.swift */; };
 		ADB0954320A859B900152750 /* ExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0954220A859B900152750 /* ExportViewController.swift */; };
@@ -36,6 +37,7 @@
 		AD8C95FA20A9AFFB00586B71 /* AccessRequestedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessRequestedManager.swift; sourceTree = "<group>"; };
 		AD8C95FC20A9B01500586B71 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		AD8C95FE20A9B03000586B71 /* GalleryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryManager.swift; sourceTree = "<group>"; };
+		AD8C960020A9D04100586B71 /* RecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
 		ADB0953E20A859A000152750 /* PermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewController.swift; sourceTree = "<group>"; };
 		ADB0954020A859AC00152750 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ADB0954220A859B900152750 /* ExportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				ADB0955320A86EDD00152750 /* NextButton.swift */,
+				AD8C960020A9D04100586B71 /* RecordButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				ADB0954520A85A5F00152750 /* PermissionView.swift in Sources */,
 				ADB0954A20A85AA600152750 /* MainView.swift in Sources */,
 				ADB0953F20A859A000152750 /* PermissionViewController.swift in Sources */,
+				AD8C960120A9D04100586B71 /* RecordButton.swift in Sources */,
 				AD62C2AA20A8582700AE9BAF /* AppDelegate.swift in Sources */,
 				ADB0954320A859B900152750 /* ExportViewController.swift in Sources */,
 				AD8C95FF20A9B03000586B71 /* GalleryManager.swift in Sources */,

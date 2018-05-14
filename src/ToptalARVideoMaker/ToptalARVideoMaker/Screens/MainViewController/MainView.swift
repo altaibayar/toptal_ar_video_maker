@@ -7,3 +7,12 @@
 //
 
 import Foundation
+import UIKit
+import SceneKit
+import ARKit
+
+class MainView: UIView {
+
+    @IBOutlet weak var sceneView: ARSCNView!
+    @IBOutlet weak var recordButton: RecordButton!
+}
