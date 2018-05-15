@@ -9,6 +9,6 @@
 import Foundation
 import UIKit
 
-class ExportViewController: UIViewController {
+class ExportViewController: BaseViewController<ExportView> {
     
 }

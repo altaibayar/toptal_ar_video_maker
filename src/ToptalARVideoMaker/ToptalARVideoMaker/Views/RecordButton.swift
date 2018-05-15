@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 
 protocol RecordButtonDelegate: class {
-    func touchBegan(for button: RecordButton);
-    func touchEnd(for button: RecordButton);
+    func recordButtonTouchBegan(for button: RecordButton);
+    func recordButtonTouchEnd(for button: RecordButton);
 }
 
 class RecordButton: UIButton {
@@ -74,10 +74,10 @@ class RecordButton: UIButton {
 
         if self.isHighlighted {
             self.startAnimation();
-            self.delegate?.touchBegan(for: self);
+            self.delegate?.recordButtonTouchBegan(for: self);
         } else {
             self.stopAnimation();
-            self.delegate?.touchEnd(for: self);
+            self.delegate?.recordButtonTouchEnd(for: self);
         }
     }
 }

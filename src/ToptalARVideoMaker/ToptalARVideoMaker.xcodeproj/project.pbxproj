@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD1C1DF520AB48CD00CEE318 /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1C1DF420AB48CD00CEE318 /* UIDeviceExtensions.swift */; };
 		AD62C2AA20A8582700AE9BAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62C2A920A8582700AE9BAF /* AppDelegate.swift */; };
 		AD62C2AC20A8582700AE9BAF /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = AD62C2AB20A8582700AE9BAF /* art.scnassets */; };
 		AD62C2B120A8582700AE9BAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD62C2AF20A8582700AE9BAF /* Main.storyboard */; };
@@ -24,9 +25,12 @@
 		ADB0954D20A85ADE00152750 /* ExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0954C20A85ADE00152750 /* ExportView.swift */; };
 		ADB0955420A86EDD00152750 /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0955320A86EDD00152750 /* NextButton.swift */; };
 		ADB0955720A86EFE00152750 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0955620A86EFE00152750 /* UIColorExtensions.swift */; };
+		ADE3CCBB20AB36C400E6BCAC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3CCBA20AB36C400E6BCAC /* BaseViewController.swift */; };
+		ADE3CCBE20AB3C7B00E6BCAC /* ARKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3CCBD20AB3C7B00E6BCAC /* ARKitUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD1C1DF420AB48CD00CEE318 /* UIDeviceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtensions.swift; sourceTree = "<group>"; };
 		AD62C2A620A8582700AE9BAF /* ToptalARVideoMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToptalARVideoMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD62C2A920A8582700AE9BAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD62C2AB20A8582700AE9BAF /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -46,6 +50,8 @@
 		ADB0954C20A85ADE00152750 /* ExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportView.swift; sourceTree = "<group>"; };
 		ADB0955320A86EDD00152750 /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
 		ADB0955620A86EFE00152750 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		ADE3CCBA20AB36C400E6BCAC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		ADE3CCBD20AB3C7B00E6BCAC /* ARKitUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,7 @@
 		ADB0953B20A8585500152750 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				ADE3CCBA20AB36C400E6BCAC /* BaseViewController.swift */,
 				ADB0954B20A85AAB00152750 /* ExportViewController */,
 				ADB0954720A85A8A00152750 /* MainViewController */,
 				ADB0954620A85A6E00152750 /* PermissionViewController */,
@@ -158,6 +165,7 @@
 		ADB0955020A85AFB00152750 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				ADE3CCBC20AB3C0500E6BCAC /* ARKit */,
 				AD8C95F820A9AFC400586B71 /* Managers */,
 				ADB0955520A86EEF00152750 /* Extensions */,
 			);
@@ -184,8 +192,17 @@
 			isa = PBXGroup;
 			children = (
 				ADB0955620A86EFE00152750 /* UIColorExtensions.swift */,
+				AD1C1DF420AB48CD00CEE318 /* UIDeviceExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ADE3CCBC20AB3C0500E6BCAC /* ARKit */ = {
+			isa = PBXGroup;
+			children = (
+				ADE3CCBD20AB3C7B00E6BCAC /* ARKitUtils.swift */,
+			);
+			path = ARKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +278,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADB0955720A86EFE00152750 /* UIColorExtensions.swift in Sources */,
+				AD1C1DF520AB48CD00CEE318 /* UIDeviceExtensions.swift in Sources */,
 				ADB0954520A85A5F00152750 /* PermissionView.swift in Sources */,
 				ADB0954A20A85AA600152750 /* MainView.swift in Sources */,
 				ADB0953F20A859A000152750 /* PermissionViewController.swift in Sources */,
 				AD8C960120A9D04100586B71 /* RecordButton.swift in Sources */,
+				ADE3CCBE20AB3C7B00E6BCAC /* ARKitUtils.swift in Sources */,
+				ADE3CCBB20AB36C400E6BCAC /* BaseViewController.swift in Sources */,
 				AD62C2AA20A8582700AE9BAF /* AppDelegate.swift in Sources */,
 				ADB0954320A859B900152750 /* ExportViewController.swift in Sources */,
 				AD8C95FF20A9B03000586B71 /* GalleryManager.swift in Sources */,

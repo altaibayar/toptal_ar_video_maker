@@ -8,15 +8,30 @@
 
 import Foundation
 import UIKit
+import ARKit
 
-class MainViewController: UIViewController {
+class MainViewController: BaseViewController<MainView> {
 
-    private var mainView: MainView {
-        return self.view as! MainView;
-    }
+    let session: ARSession = ARSession.default;
+    let configuration: ARConfiguration = ARConfiguration.default;
 
     override func viewDidLoad() {
         super.viewDidLoad();
 
+        self.contentView.delegate = self;
     }
+}
+
+extension MainViewController: MainViewDelegate {
+    func startRecording() {
+        print("start recording");
+    }
+
+    func stopRecording() {
+        print("stop recording");
+    }
+}
+
+extension MainViewController: ARSessionDelegate {
+
 }

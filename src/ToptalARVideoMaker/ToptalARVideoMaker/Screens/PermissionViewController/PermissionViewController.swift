@@ -9,11 +9,7 @@
 import Foundation
 import UIKit
 
-class PermissionViewController: UIViewController {
-
-    private var permissionView: PermissionView {
-        return self.view as! PermissionView;
-    }
+class PermissionViewController: BaseViewController<PermissionView> {
 
     private let cameraAccessManager: AccessRequestedManager = CameraManager();
     private let galleryAccessManager: AccessRequestedManager = GalleryManager();
@@ -21,9 +17,9 @@ class PermissionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad();
 
-        permissionView.delegate = self;
-        permissionView.cameraAccessManager = self.cameraAccessManager;
-        permissionView.galleryAccessManager = self.galleryAccessManager;
+        self.contentView.delegate = self;
+        self.contentView.cameraAccessManager = self.cameraAccessManager;
+        self.contentView.galleryAccessManager = self.galleryAccessManager;
     }
 
     override func viewDidAppear(_ animated: Bool) {

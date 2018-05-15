@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -143,13 +142,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </arscnView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6r1-77-CRG" customClass="RecordButton" customModule="ToptalARVideoMaker" customModuleProvider="target">
-                                <rect key="frame" x="137" y="638" width="100" height="100"/>
+                                <rect key="frame" x="147" y="658" width="80" height="80"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="WQI-Oe-Nas"/>
-                                    <constraint firstAttribute="width" secondItem="6r1-77-CRG" secondAttribute="height" multiplier="1:1" id="XAm-Mg-JEK"/>
+                                    <constraint firstAttribute="width" constant="80" id="h4U-4L-y8a"/>
+                                    <constraint firstAttribute="height" constant="80" id="lOl-3r-iG8"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -163,8 +161,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NHa-wx-Txc"/>
                         <connections>
-                            <outlet property="recordButton" destination="6r1-77-CRG" id="XzS-rd-Z9Z"/>
-                            <outlet property="sceneView" destination="6Bh-kc-Six" id="FfN-q1-2r7"/>
+                            <outlet property="recordButton" destination="6r1-77-CRG" id="v8j-gJ-tzW"/>
+                            <outlet property="sceneView" destination="6Bh-kc-Six" id="bPh-md-QJw"/>
                         </connections>
                     </view>
                     <connections>
