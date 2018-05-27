@@ -20,13 +20,19 @@ class MainView: UIView {
 
     @IBOutlet weak var sceneView: ARSCNView!
     @IBOutlet weak var recordButton: RecordButton!
+    @IBOutlet weak var addButton: AddButton!
 
     weak var delegate: MainViewDelegate?;
+
+    var isRecording: Bool = false {
+        didSet {
+            self.layer.borderColor = isRecording ? UIColor.toptalRed.cgColor : UIColor.clear.cgColor;
+        }
+    }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder);
 
-        self.layer.borderWidth = 8.0;
         self.layer.borderColor = UIColor.clear.cgColor;
         if UIDevice.current.isIPhoneX {
             self.layer.cornerRadius = 39.0;
@@ -35,22 +41,23 @@ class MainView: UIView {
 
     override func didMoveToSuperview() {
         super.didMoveToSuperview();
-
         self.recordButton.delegate = self;
+    }
+
+    @IBAction func addButtonTouchUpInside(_ sender: AddButton) {
+        
     }
 }
 
 extension MainView: RecordButtonDelegate {
 
     func recordButtonTouchBegan(for button: RecordButton) {
-        self.layer.borderColor = UIColor.toptalRed.cgColor;
-
+        self.isRecording = true;
         self.delegate?.startRecording();
     }
 
     func recordButtonTouchEnd(for button: RecordButton) {
-        self.layer.borderColor = UIColor.clear.cgColor;
-
+        self.isRecording = false;
         self.delegate?.stopRecording();
     }
 }

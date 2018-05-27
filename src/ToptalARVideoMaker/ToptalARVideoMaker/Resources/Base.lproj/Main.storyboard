@@ -149,29 +149,88 @@
                                     <constraint firstAttribute="height" constant="80" id="lOl-3r-iG8"/>
                                 </constraints>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R03-Ln-eJw">
+                                <rect key="frame" x="227" y="658" width="148" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YM8-EZ-RBY" customClass="AddButton" customModule="ToptalARVideoMaker" customModuleProvider="target">
+                                        <rect key="frame" x="50.333333333333314" y="16" width="48" height="48"/>
+                                        <state key="normal" image="add"/>
+                                        <state key="highlighted" image="addPressed"/>
+                                        <connections>
+                                            <action selector="addButtonTouchUpInside:" destination="gH1-O7-ymy" eventType="touchUpInside" id="Kkg-SW-uhe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="YM8-EZ-RBY" firstAttribute="centerX" secondItem="R03-Ln-eJw" secondAttribute="centerX" id="GLf-Hi-iA1"/>
+                                    <constraint firstItem="YM8-EZ-RBY" firstAttribute="centerY" secondItem="R03-Ln-eJw" secondAttribute="centerY" id="sQa-7K-jtf"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Bh-kc-Six" firstAttribute="trailing" secondItem="NHa-wx-Txc" secondAttribute="trailing" id="A7X-gI-p6g"/>
+                            <constraint firstItem="R03-Ln-eJw" firstAttribute="height" secondItem="6r1-77-CRG" secondAttribute="height" id="FJw-f6-zrR"/>
+                            <constraint firstItem="NHa-wx-Txc" firstAttribute="bottom" secondItem="R03-Ln-eJw" secondAttribute="bottom" constant="40" id="JcV-Zo-WmY"/>
                             <constraint firstItem="6r1-77-CRG" firstAttribute="centerX" secondItem="gH1-O7-ymy" secondAttribute="centerX" id="LLT-qa-Rri"/>
                             <constraint firstItem="NHa-wx-Txc" firstAttribute="bottom" secondItem="6r1-77-CRG" secondAttribute="bottom" constant="40" id="Xsc-9b-Bmb"/>
                             <constraint firstItem="6Bh-kc-Six" firstAttribute="top" secondItem="gH1-O7-ymy" secondAttribute="top" id="dP1-6U-FkC"/>
+                            <constraint firstItem="NHa-wx-Txc" firstAttribute="trailing" secondItem="R03-Ln-eJw" secondAttribute="trailing" id="f9E-W6-9b4"/>
+                            <constraint firstItem="R03-Ln-eJw" firstAttribute="leading" secondItem="6r1-77-CRG" secondAttribute="trailing" id="nlT-Io-jOO"/>
                             <constraint firstAttribute="bottom" secondItem="6Bh-kc-Six" secondAttribute="bottom" id="pJ9-Hb-wB9"/>
                             <constraint firstItem="6Bh-kc-Six" firstAttribute="leading" secondItem="NHa-wx-Txc" secondAttribute="leading" id="sXk-8L-hJ2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NHa-wx-Txc"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                         <connections>
+                            <outlet property="addButton" destination="YM8-EZ-RBY" id="vc9-eP-Jig"/>
                             <outlet property="recordButton" destination="6r1-77-CRG" id="v8j-gJ-tzW"/>
                             <outlet property="sceneView" destination="6Bh-kc-Six" id="bPh-md-QJw"/>
                         </connections>
                     </view>
                     <connections>
                         <segue destination="hzq-bu-Mc7" kind="show" identifier="export" id="dkY-zr-DDE"/>
+                        <segue destination="eM7-Ks-uEq" kind="popoverPresentation" identifier="showNodes" popoverAnchorView="YM8-EZ-RBY" id="JIf-MV-Yl8">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-540" y="115.27093596059113"/>
+        </scene>
+        <!--Select Node View Controller-->
+        <scene sceneID="G3T-fl-Mjn">
+            <objects>
+                <tableViewController id="eM7-Ks-uEq" customClass="SelectNodeViewController" customModule="ToptalARVideoMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="q14-Rd-MXw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Pk8-5d-0vW">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pk8-5d-0vW" id="pbo-tX-0Ar">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="eM7-Ks-uEq" id="upd-m4-Etm"/>
+                            <outlet property="delegate" destination="eM7-Ks-uEq" id="h4Q-NJ-BxH"/>
+                        </connections>
+                    </tableView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UI7-El-Vqy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70" y="878"/>
         </scene>
         <!--Export View Controller-->
         <scene sceneID="HVh-dv-Xod">
@@ -189,4 +248,8 @@
             <point key="canvasLocation" x="349" y="115"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="add" width="48" height="48"/>
+        <image name="addPressed" width="48" height="48"/>
+    </resources>
 </document>
