@@ -13,15 +13,15 @@ class VirtualObjectDataSource {
     private let allObjects: [VirtualObject];
 
     init() {
-        allObjects = [ KnifeNode(), BulletNode() ];
+        allObjects = [ .knife, .bullet ];
     }
 
     var count: Int {
-        return allNodes.count;
+        return allObjects.count;
     }
 
-    func node(at index: Int) -> VirtualObject {
-        guard index >= 0 && index < self.allObjects.count {
+    func object(at index: Int) -> VirtualObject {
+        guard index >= 0 && index < self.allObjects.count else {
             fatalError();
         }
 

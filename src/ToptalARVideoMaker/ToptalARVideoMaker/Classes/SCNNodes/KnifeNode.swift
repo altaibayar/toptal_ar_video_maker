@@ -9,6 +9,6 @@
 import Foundation
 import SceneKit
 
-class KnifeNode: SCNNode, VirtualObject {
+class KnifeNode: SCNNode {
     var displayName: String { return "Knife"; }
 }

@@ -14,6 +14,7 @@ import ARKit
 protocol MainViewDelegate: class {
     func startRecording();
     func stopRecording();
+    func showVirtualObjectsList(source: UIView);
 }
 
 class MainView: UIView {
@@ -23,6 +24,7 @@ class MainView: UIView {
     @IBOutlet weak var addButton: AddButton!
 
     weak var delegate: MainViewDelegate?;
+    
 
     var isRecording: Bool = false {
         didSet {
@@ -45,7 +47,7 @@ class MainView: UIView {
     }
 
     @IBAction func addButtonTouchUpInside(_ sender: AddButton) {
-        
+        self.delegate?.showVirtualObjectsList(source: sender);
     }
 }
 

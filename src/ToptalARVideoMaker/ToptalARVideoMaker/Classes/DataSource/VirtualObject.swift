@@ -9,8 +9,15 @@
 import Foundation
 import SceneKit
 
-protocol VirtualObject {
-    var displayName: String { get }
-    func createNode() -> SCNNode;
+enum VirtualObject {
+    case knife, bullet;
 }
 
+extension VirtualObject {
+    var displayName: String {
+        switch self {
+        case .bullet: return "Bullet";
+        case .knife: return "Knife";
+        }
+    }
+}

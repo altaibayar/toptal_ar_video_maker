@@ -9,6 +9,6 @@
 import Foundation
 import SceneKit
 
-class BulletNode: SCNNode, VirtualObject {
+class BulletNode: SCNNode {
     var displayName: String { return "Bullet"; }
 }
