@@ -140,6 +140,7 @@
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Bh-kc-Six">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </arscnView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6r1-77-CRG" customClass="RecordButton" customModule="ToptalARVideoMaker" customModuleProvider="target">
                                 <rect key="frame" x="147" y="658" width="80" height="80"/>
@@ -167,7 +168,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Bh-kc-Six" firstAttribute="trailing" secondItem="NHa-wx-Txc" secondAttribute="trailing" id="A7X-gI-p6g"/>
                             <constraint firstItem="R03-Ln-eJw" firstAttribute="height" secondItem="6r1-77-CRG" secondAttribute="height" id="FJw-f6-zrR"/>

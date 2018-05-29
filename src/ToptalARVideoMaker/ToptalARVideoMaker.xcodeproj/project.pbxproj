@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		AD1C1DF520AB48CD00CEE318 /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1C1DF420AB48CD00CEE318 /* UIDeviceExtensions.swift */; };
+		AD317DBD20BD6D5F00ECA3D1 /* MainViewController+ARSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD317DBC20BD6D5F00ECA3D1 /* MainViewController+ARSessionDelegate.swift */; };
+		AD317DBF20BD6DAB00ECA3D1 /* MainViewController+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD317DBE20BD6DAB00ECA3D1 /* MainViewController+ARSCNViewDelegate.swift */; };
+		AD317DC120BD73D900ECA3D1 /* PlaneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD317DC020BD73D900ECA3D1 /* PlaneNode.swift */; };
 		AD526E5C20BB4A53000613E2 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD526E5B20BB4A53000613E2 /* AddButton.swift */; };
 		AD526E5F20BB4F5C000613E2 /* SelectNodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD526E5E20BB4F5C000613E2 /* SelectNodeViewController.swift */; };
 		AD526E6120BB4F9A000613E2 /* BulletNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD526E6020BB4F9A000613E2 /* BulletNode.swift */; };
@@ -39,6 +42,9 @@
 
 /* Begin PBXFileReference section */
 		AD1C1DF420AB48CD00CEE318 /* UIDeviceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtensions.swift; sourceTree = "<group>"; };
+		AD317DBC20BD6D5F00ECA3D1 /* MainViewController+ARSessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+ARSessionDelegate.swift"; sourceTree = "<group>"; };
+		AD317DBE20BD6DAB00ECA3D1 /* MainViewController+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
+		AD317DC020BD73D900ECA3D1 /* PlaneNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneNode.swift; sourceTree = "<group>"; };
 		AD526E5B20BB4A53000613E2 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
 		AD526E5E20BB4F5C000613E2 /* SelectNodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectNodeViewController.swift; sourceTree = "<group>"; };
 		AD526E6020BB4F9A000613E2 /* BulletNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletNode.swift; sourceTree = "<group>"; };
@@ -182,6 +188,8 @@
 			children = (
 				ADB0954920A85AA600152750 /* MainView.swift */,
 				ADB0954020A859AC00152750 /* MainViewController.swift */,
+				AD317DBC20BD6D5F00ECA3D1 /* MainViewController+ARSessionDelegate.swift */,
+				AD317DBE20BD6DAB00ECA3D1 /* MainViewController+ARSCNViewDelegate.swift */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -213,6 +221,7 @@
 				AD526E6020BB4F9A000613E2 /* BulletNode.swift */,
 				AD526E6220BB4FA4000613E2 /* KnifeNode.swift */,
 				AD9D90BB20BC539C0032029B /* ReticleNode.swift */,
+				AD317DC020BD73D900ECA3D1 /* PlaneNode.swift */,
 			);
 			path = SCNNodes;
 			sourceTree = "<group>";
@@ -330,11 +339,14 @@
 				AD8C960120A9D04100586B71 /* RecordButton.swift in Sources */,
 				ADE3CCBB20AB36C400E6BCAC /* BaseViewController.swift in Sources */,
 				AD62C2AA20A8582700AE9BAF /* AppDelegate.swift in Sources */,
+				AD317DC120BD73D900ECA3D1 /* PlaneNode.swift in Sources */,
+				AD317DBF20BD6DAB00ECA3D1 /* MainViewController+ARSCNViewDelegate.swift in Sources */,
 				ADB0954320A859B900152750 /* ExportViewController.swift in Sources */,
 				AD526E5F20BB4F5C000613E2 /* SelectNodeViewController.swift in Sources */,
 				AD8C95FF20A9B03000586B71 /* GalleryManager.swift in Sources */,
 				ADB0954120A859AC00152750 /* MainViewController.swift in Sources */,
 				AD526E5C20BB4A53000613E2 /* AddButton.swift in Sources */,
+				AD317DBD20BD6D5F00ECA3D1 /* MainViewController+ARSessionDelegate.swift in Sources */,
 				AD526E6A20BB5158000613E2 /* VirtualObject.swift in Sources */,
 				ADB0955420A86EDD00152750 /* NextButton.swift in Sources */,
 				AD8C95FB20A9AFFB00586B71 /* AccessRequestedManager.swift in Sources */,

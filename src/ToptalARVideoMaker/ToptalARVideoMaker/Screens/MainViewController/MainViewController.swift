@@ -10,17 +10,30 @@ import Foundation
 import UIKit
 import ARKit
 
-class MainViewController: BaseViewController<MainView>, UIPopoverPresentationControllerDelegate {
+class MainViewController: UIViewController {
 
-    let session = ToptalARSession(delegate: nil);
+    internal let device = MTLCreateSystemDefaultDevice()!;
+
+    var contentView: MainView {
+        return self.view as! MainView;
+    }
+
+    var session: ToptalARSession!
     let scene = ToptalARScene();
     let virtualObjectDataSource = VirtualObjectDataSource();
 
     override func viewDidLoad() {
         super.viewDidLoad();
+
+        self.session = ToptalARSession(delegate: self);
+        
         self.contentView.sceneView.session = session;
         self.contentView.sceneView.scene = scene;
+
         self.contentView.delegate = self;
+        self.contentView.sceneView.delegate = self;
+
+        self.contentView.sceneView.debugOptions = [ ARSCNDebugOptions.showFeaturePoints ];
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -42,7 +55,7 @@ class MainViewController: BaseViewController<MainView>, UIPopoverPresentationCon
             }
 
             if let popover = vc.popoverPresentationController, let source = sender as? UIView {
-                popover.delegate = self;
+//                popover.delegate = self;
                 popover.sourceView = source;
                 popover.sourceRect = source.bounds;
             }
@@ -56,6 +69,10 @@ class MainViewController: BaseViewController<MainView>, UIPopoverPresentationCon
         return .none;
     }
 }
+
+//extension MainViewController: UIPopoverPresentationControllerDelegate {
+//
+//}
 
 extension MainViewController: MainViewDelegate {
     func startRecording() {
@@ -75,31 +92,7 @@ extension MainViewController: MainViewDelegate {
 
 extension MainViewController: SelectNodeViewControllerDelegate {
     func selectNodeViewController(_ vc: SelectNodeViewController, selected: VirtualObject) {
+        print("Selected: \(selected)");
         vc.dismiss(animated: true, completion: nil);
-    }
-}
-
-extension MainViewController: ARSessionDelegate {
-    @nonobjc func session(_ session: ARSession, didUpdate frame: ARFrame) {
-        self.scene.update(for: frame);
-    }
-
-    @nonobjc func session(_ session: ARSession, cameraDidChangeTrackingState camera: ARCamera) {
-        self.contentView.isUserInteractionEnabled = !camera.trackingState.canWork;
-    }
-}
-
-private extension ARCamera.TrackingState {
-    var canWork: Bool {
-        switch self {
-        case .notAvailable:
-            return true;
-        case .limited(let reason):
-            switch reason {
-            case .initializing, .relocalizing: return true;
-            default: return false;
-            }
-        default: return false;
-        }
     }
 }
