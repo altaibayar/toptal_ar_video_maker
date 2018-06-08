@@ -10,13 +10,14 @@ import Foundation
 import UIKit
 import ARKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, ContentViewController {
+    typealias ContentView = MainView
 
     internal let device = MTLCreateSystemDefaultDevice()!;
 
-    var contentView: MainView {
-        return self.view as! MainView;
-    }
+//    var contentView: MainView {
+//        return self.view as! MainView;
+//    }
 
     var session: ToptalARSession!
     let scene = ToptalARScene();
@@ -55,7 +56,7 @@ class MainViewController: UIViewController {
             }
 
             if let popover = vc.popoverPresentationController, let source = sender as? UIView {
-//                popover.delegate = self;
+                popover.delegate = self;
                 popover.sourceView = source;
                 popover.sourceRect = source.bounds;
             }
@@ -70,9 +71,9 @@ class MainViewController: UIViewController {
     }
 }
 
-//extension MainViewController: UIPopoverPresentationControllerDelegate {
-//
-//}
+extension MainViewController: UIPopoverPresentationControllerDelegate {
+
+}
 
 extension MainViewController: MainViewDelegate {
     func startRecording() {

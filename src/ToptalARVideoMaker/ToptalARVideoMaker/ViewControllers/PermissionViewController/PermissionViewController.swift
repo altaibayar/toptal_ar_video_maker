@@ -9,7 +9,8 @@
 import Foundation
 import UIKit
 
-class PermissionViewController: BaseViewController<PermissionView> {
+class PermissionViewController: UIViewController, ContentViewController {
+    typealias ContentView = PermissionView;
 
     private let cameraAccessManager: AccessRequestedManager = CameraManager();
     private let galleryAccessManager: AccessRequestedManager = GalleryManager();

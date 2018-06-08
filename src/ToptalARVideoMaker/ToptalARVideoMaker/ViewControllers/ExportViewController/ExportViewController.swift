@@ -9,6 +9,10 @@
 import Foundation
 import UIKit
 
-class ExportViewController: BaseViewController<ExportView> {
+class ExportViewController: UIViewController {
     
+}
+
+extension ExportViewController: ContentViewController {
+    typealias ContentView = ExportView;
 }

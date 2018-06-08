@@ -37,7 +37,7 @@
 		ADB0955420A86EDD00152750 /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0955320A86EDD00152750 /* NextButton.swift */; };
 		ADB0955720A86EFE00152750 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0955620A86EFE00152750 /* UIColorExtensions.swift */; };
 		ADCB462D20B855FB00DD9E1F /* ToptalARSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCB462C20B855FB00DD9E1F /* ToptalARSession.swift */; };
-		ADE3CCBB20AB36C400E6BCAC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3CCBA20AB36C400E6BCAC /* BaseViewController.swift */; };
+		ADE3CCBB20AB36C400E6BCAC /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3CCBA20AB36C400E6BCAC /* ContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,7 +73,7 @@
 		ADB0955320A86EDD00152750 /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
 		ADB0955620A86EFE00152750 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		ADCB462C20B855FB00DD9E1F /* ToptalARSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToptalARSession.swift; sourceTree = "<group>"; };
-		ADE3CCBA20AB36C400E6BCAC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		ADE3CCBA20AB36C400E6BCAC /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +127,7 @@
 				AD62C2A920A8582700AE9BAF /* AppDelegate.swift */,
 				ADB0955020A85AFB00152750 /* Classes */,
 				ADB0955220A85B2400152750 /* Views */,
-				ADB0953B20A8585500152750 /* Screens */,
+				ADB0953B20A8585500152750 /* ViewControllers */,
 				ADB0953D20A8585F00152750 /* Resources */,
 			);
 			path = ToptalARVideoMaker;
@@ -151,16 +151,16 @@
 			path = AccessRequest;
 			sourceTree = "<group>";
 		};
-		ADB0953B20A8585500152750 /* Screens */ = {
+		ADB0953B20A8585500152750 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				ADE3CCBA20AB36C400E6BCAC /* BaseViewController.swift */,
+				ADE3CCBA20AB36C400E6BCAC /* ContentViewController.swift */,
 				AD526E5D20BB4F46000613E2 /* SelectNodeViewController */,
 				ADB0954B20A85AAB00152750 /* ExportViewController */,
 				ADB0954720A85A8A00152750 /* MainViewController */,
 				ADB0954620A85A6E00152750 /* PermissionViewController */,
 			);
-			path = Screens;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		ADB0953D20A8585F00152750 /* Resources */ = {
@@ -337,7 +337,7 @@
 				AD9D90BA20BC4E5C0032029B /* ToptalARScene.swift in Sources */,
 				ADB0953F20A859A000152750 /* PermissionViewController.swift in Sources */,
 				AD8C960120A9D04100586B71 /* RecordButton.swift in Sources */,
-				ADE3CCBB20AB36C400E6BCAC /* BaseViewController.swift in Sources */,
+				ADE3CCBB20AB36C400E6BCAC /* ContentViewController.swift in Sources */,
 				AD62C2AA20A8582700AE9BAF /* AppDelegate.swift in Sources */,
 				AD317DC120BD73D900ECA3D1 /* PlaneNode.swift in Sources */,
 				AD317DBF20BD6DAB00ECA3D1 /* MainViewController+ARSCNViewDelegate.swift in Sources */,
