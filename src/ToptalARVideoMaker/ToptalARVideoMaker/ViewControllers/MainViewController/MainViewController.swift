@@ -15,10 +15,6 @@ class MainViewController: UIViewController, ContentViewController {
 
     internal let device = MTLCreateSystemDefaultDevice()!;
 
-//    var contentView: MainView {
-//        return self.view as! MainView;
-//    }
-
     var session: ToptalARSession!
     let scene = ToptalARScene();
     let virtualObjectDataSource = VirtualObjectDataSource();
@@ -71,10 +67,6 @@ class MainViewController: UIViewController, ContentViewController {
     }
 }
 
-extension MainViewController: UIPopoverPresentationControllerDelegate {
-
-}
-
 extension MainViewController: MainViewDelegate {
     func startRecording() {
         self.scene.hideReticle();
@@ -97,3 +89,5 @@ extension MainViewController: SelectNodeViewControllerDelegate {
         vc.dismiss(animated: true, completion: nil);
     }
 }
+
+extension MainViewController: UIPopoverPresentationControllerDelegate { }

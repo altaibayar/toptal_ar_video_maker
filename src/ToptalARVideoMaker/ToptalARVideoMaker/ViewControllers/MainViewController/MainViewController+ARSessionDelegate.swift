@@ -11,7 +11,7 @@ import ARKit
 
 extension MainViewController: ARSessionDelegate {
     func session(_ session: ARSession, didUpdate frame: ARFrame) {
-        self.scene.update(for: frame);
+        self.scene.update(for: frame, inSize: self.contentView.sceneView.bounds.size);
     }
 
     func session(_ session: ARSession, cameraDidChangeTrackingState camera: ARCamera) {
