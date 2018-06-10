@@ -11,19 +11,33 @@ import SceneKit
 
 class ReticleNode: SCNNode {
 
-    var reticleHeight: Float!;
+    let reticleHeight: CGFloat = 1.5;
 
     override init() {
         super.init();
 
-        let node = SCNScene(named: "ReticleScene")!.rootNode;
+        let node = SCNScene(named: "ReticleScene.scn")!.rootNode.childNode(withName: "reticle", recursively: true)!;
         node.position = SCNVector3Zero;
         self.addChildNode(node);
-
-        self.reticleHeight = node.childNode(withName: "reticle", recursively: true)!.position.y;
     }
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+
+    func update(position: SCNVector3) {
+        self.position = position;
+    }
+
+    func showReticle() {
+        if self.isHidden {
+            self.runAction(SCNAction.unhide());
+        }
+    }
+
+    func hideReticle() {
+        if !self.isHidden {
+            self.runAction(SCNAction.hide());
+        }
     }
 }

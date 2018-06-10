@@ -17,6 +17,7 @@ class ToptalARScene: SCNScene {
     override init() {
         super.init();
 
+        self.reticleNode.hideReticle();
         self.rootNode.addChildNode(reticleNode);
     }
 
@@ -30,26 +31,24 @@ class ToptalARScene: SCNScene {
 }
 
 extension ToptalARScene {
-    func update(for frame: ARFrame, inSize size: CGSize) {
-        let center = CGPoint(x: size.width / 2.0, y: size.height / 2.0);
-
-        guard let hitTest = frame.hitTest(center, types: .existingPlaneUsingExtent).first else {
+    func update(for frame: ARFrame) {
+        guard let hitTest = frame.hitTest(CGPoint(x: 0.5, y: 0.5), types: .existingPlane).first else {
             self.hideReticle();
             return;
         }
 
         self.showReticle();
-        self.reticleNode.position = hitTest.worldTransform.vector3;
+        self.reticleNode.update(position: hitTest.worldTransform.vector3);
     }
 }
 
 extension ToptalARScene {
     func showReticle() {
-        self.reticleNode.runAction(SCNAction.hide());
+        self.reticleNode.showReticle();
     }
 
     func hideReticle() {
-        self.reticleNode.runAction(SCNAction.unhide());
+        self.reticleNode.hideReticle();
     }
 }
 

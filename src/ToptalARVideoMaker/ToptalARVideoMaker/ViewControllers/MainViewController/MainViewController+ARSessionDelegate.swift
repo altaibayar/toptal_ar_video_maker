@@ -11,10 +11,11 @@ import ARKit
 
 extension MainViewController: ARSessionDelegate {
     func session(_ session: ARSession, didUpdate frame: ARFrame) {
-        self.scene.update(for: frame, inSize: self.contentView.sceneView.bounds.size);
+        self.scene.update(for: frame);
     }
 
     func session(_ session: ARSession, cameraDidChangeTrackingState camera: ARCamera) {
+        print("Camera state changed \(camera.trackingState)")
         self.contentView.isUserInteractionEnabled = !camera.trackingState.canWork;
     }
 }
