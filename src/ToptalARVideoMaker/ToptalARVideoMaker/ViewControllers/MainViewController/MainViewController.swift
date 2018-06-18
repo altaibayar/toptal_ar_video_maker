@@ -85,8 +85,7 @@ extension MainViewController: MainViewDelegate {
 
 extension MainViewController: SelectNodeViewControllerDelegate {
     func selectNodeViewController(_ vc: SelectNodeViewController, selected: VirtualObject) {
-        print("Selected: \(selected)");
-        vc.dismiss(animated: true, completion: nil);
+        self.scene.addVirtualObject(object: selected);
     }
 }
 

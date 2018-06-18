@@ -13,7 +13,7 @@ class VirtualObjectDataSource {
     private let allObjects: [VirtualObject];
 
     init() {
-        allObjects = [ .knife, .bullet ];
+        allObjects = [ .knife, .bullets ];
     }
 
     var count: Int {

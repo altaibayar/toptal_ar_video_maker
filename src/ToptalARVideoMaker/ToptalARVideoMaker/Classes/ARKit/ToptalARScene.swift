@@ -13,12 +13,14 @@ import ARKit
 class ToptalARScene: SCNScene {
 
     let reticleNode = ReticleNode();
+    let lightNode = DirectionalLightNode();
 
     override init() {
         super.init();
 
         self.reticleNode.hideReticle();
         self.rootNode.addChildNode(reticleNode);
+        self.rootNode.addChildNode(self.lightNode);
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -26,7 +28,18 @@ class ToptalARScene: SCNScene {
     }
 
     func addVirtualObject(object: VirtualObject) {
+        let node: SCNNode;
+        switch object {
+        case .knife: node = KnifeNode();
+        case .bullets: node = BulletsNode();
+        }
 
+        //default position
+        var position = self.reticleNode.position;
+        position.y += 1.0;
+        node.position = position;
+
+        self.rootNode.addChildNode(node);
     }
 }
 

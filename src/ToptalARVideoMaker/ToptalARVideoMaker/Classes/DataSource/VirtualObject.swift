@@ -10,13 +10,13 @@ import Foundation
 import SceneKit
 
 enum VirtualObject {
-    case knife, bullet;
+    case knife, bullets;
 }
 
 extension VirtualObject {
     var displayName: String {
         switch self {
-        case .bullet: return "Bullet";
+        case .bullets: return "Bullets";
         case .knife: return "Knife";
         }
     }

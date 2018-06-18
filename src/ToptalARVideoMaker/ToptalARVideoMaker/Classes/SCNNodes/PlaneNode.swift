@@ -21,7 +21,7 @@ class PlaneNode: SCNNode {
         super.init();
 
         self.planeGeometry = planeGeometry;
-        self.geometry?.firstMaterial?.diffuse.contents = UIColor.toptalBlue.withAlphaComponent(0.2);
+        self.geometry?.firstMaterial?.diffuse.contents = UIColor.toptalBlue.withAlphaComponent(0.0);
     }
 
     required init?(coder aDecoder: NSCoder) {

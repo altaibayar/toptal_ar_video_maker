@@ -8,15 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		AD1C1DF520AB48CD00CEE318 /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1C1DF420AB48CD00CEE318 /* UIDeviceExtensions.swift */; };
-		AD1CC1ED20CB39EB0010CB05 /* Knife_01 in Resources */ = {isa = PBXBuildFile; fileRef = AD1CC1EC20CB39EB0010CB05 /* Knife_01 */; };
-		AD1CC1EF20CB39FB0010CB05 /* Bullet in Resources */ = {isa = PBXBuildFile; fileRef = AD1CC1EE20CB39FB0010CB05 /* Bullet */; };
 		AD1CC1F320CB3AE30010CB05 /* ReticleScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = AD1CC1F220CB3AE30010CB05 /* ReticleScene.scn */; };
 		AD317DBD20BD6D5F00ECA3D1 /* MainViewController+ARSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD317DBC20BD6D5F00ECA3D1 /* MainViewController+ARSessionDelegate.swift */; };
 		AD317DBF20BD6DAB00ECA3D1 /* MainViewController+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD317DBE20BD6DAB00ECA3D1 /* MainViewController+ARSCNViewDelegate.swift */; };
 		AD317DC120BD73D900ECA3D1 /* PlaneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD317DC020BD73D900ECA3D1 /* PlaneNode.swift */; };
 		AD526E5C20BB4A53000613E2 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD526E5B20BB4A53000613E2 /* AddButton.swift */; };
 		AD526E5F20BB4F5C000613E2 /* SelectNodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD526E5E20BB4F5C000613E2 /* SelectNodeViewController.swift */; };
-		AD526E6120BB4F9A000613E2 /* BulletNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD526E6020BB4F9A000613E2 /* BulletNode.swift */; };
+		AD526E6120BB4F9A000613E2 /* BulletsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD526E6020BB4F9A000613E2 /* BulletsNode.swift */; };
 		AD526E6320BB4FA4000613E2 /* KnifeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD526E6220BB4FA4000613E2 /* KnifeNode.swift */; };
 		AD526E6820BB4FF2000613E2 /* VirtualObjectDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD526E6720BB4FF2000613E2 /* VirtualObjectDataSource.swift */; };
 		AD526E6A20BB5158000613E2 /* VirtualObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD526E6920BB5158000613E2 /* VirtualObject.swift */; };
@@ -28,6 +26,9 @@
 		AD8C95FD20A9B01500586B71 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8C95FC20A9B01500586B71 /* CameraManager.swift */; };
 		AD8C95FF20A9B03000586B71 /* GalleryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8C95FE20A9B03000586B71 /* GalleryManager.swift */; };
 		AD8C960120A9D04100586B71 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8C960020A9D04100586B71 /* RecordButton.swift */; };
+		AD90680620D694F000B7E6E6 /* Knife in Resources */ = {isa = PBXBuildFile; fileRef = AD90680520D694F000B7E6E6 /* Knife */; };
+		AD90680920D69A2E00B7E6E6 /* Randomness.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90680820D69A2E00B7E6E6 /* Randomness.swift */; };
+		AD90680B20D6AFC400B7E6E6 /* DirectionalLightNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90680A20D6AFC400B7E6E6 /* DirectionalLightNode.swift */; };
 		AD9D90BA20BC4E5C0032029B /* ToptalARScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9D90B920BC4E5C0032029B /* ToptalARScene.swift */; };
 		AD9D90BC20BC539C0032029B /* ReticleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9D90BB20BC539C0032029B /* ReticleNode.swift */; };
 		ADB0953F20A859A000152750 /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0953E20A859A000152750 /* PermissionViewController.swift */; };
@@ -44,15 +45,13 @@
 
 /* Begin PBXFileReference section */
 		AD1C1DF420AB48CD00CEE318 /* UIDeviceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtensions.swift; sourceTree = "<group>"; };
-		AD1CC1EC20CB39EB0010CB05 /* Knife_01 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Knife_01; sourceTree = "<group>"; };
-		AD1CC1EE20CB39FB0010CB05 /* Bullet */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Bullet; sourceTree = "<group>"; };
 		AD1CC1F220CB3AE30010CB05 /* ReticleScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ReticleScene.scn; sourceTree = "<group>"; };
 		AD317DBC20BD6D5F00ECA3D1 /* MainViewController+ARSessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+ARSessionDelegate.swift"; sourceTree = "<group>"; };
 		AD317DBE20BD6DAB00ECA3D1 /* MainViewController+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
 		AD317DC020BD73D900ECA3D1 /* PlaneNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneNode.swift; sourceTree = "<group>"; };
 		AD526E5B20BB4A53000613E2 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
 		AD526E5E20BB4F5C000613E2 /* SelectNodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectNodeViewController.swift; sourceTree = "<group>"; };
-		AD526E6020BB4F9A000613E2 /* BulletNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletNode.swift; sourceTree = "<group>"; };
+		AD526E6020BB4F9A000613E2 /* BulletsNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletsNode.swift; sourceTree = "<group>"; };
 		AD526E6220BB4FA4000613E2 /* KnifeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnifeNode.swift; sourceTree = "<group>"; };
 		AD526E6720BB4FF2000613E2 /* VirtualObjectDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualObjectDataSource.swift; sourceTree = "<group>"; };
 		AD526E6920BB5158000613E2 /* VirtualObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualObject.swift; sourceTree = "<group>"; };
@@ -66,6 +65,9 @@
 		AD8C95FC20A9B01500586B71 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		AD8C95FE20A9B03000586B71 /* GalleryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryManager.swift; sourceTree = "<group>"; };
 		AD8C960020A9D04100586B71 /* RecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
+		AD90680520D694F000B7E6E6 /* Knife */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Knife; sourceTree = "<group>"; };
+		AD90680820D69A2E00B7E6E6 /* Randomness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Randomness.swift; sourceTree = "<group>"; };
+		AD90680A20D6AFC400B7E6E6 /* DirectionalLightNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionalLightNode.swift; sourceTree = "<group>"; };
 		AD9D90B920BC4E5C0032029B /* ToptalARScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToptalARScene.swift; sourceTree = "<group>"; };
 		AD9D90BB20BC539C0032029B /* ReticleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReticleNode.swift; sourceTree = "<group>"; };
 		ADB0953E20A859A000152750 /* PermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewController.swift; sourceTree = "<group>"; };
@@ -94,8 +96,7 @@
 		AD1CC1E920CB398D0010CB05 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AD1CC1EE20CB39FB0010CB05 /* Bullet */,
-				AD1CC1EC20CB39EB0010CB05 /* Knife_01 */,
+				AD90680520D694F000B7E6E6 /* Knife */,
 				AD1CC1F220CB3AE30010CB05 /* ReticleScene.scn */,
 			);
 			path = Models;
@@ -165,6 +166,14 @@
 			path = AccessRequest;
 			sourceTree = "<group>";
 		};
+		AD90680720D69A1200B7E6E6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AD90680820D69A2E00B7E6E6 /* Randomness.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		ADB0953B20A8585500152750 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +234,7 @@
 				ADE3CCBC20AB3C0500E6BCAC /* ARKit */,
 				AD8C95F820A9AFC400586B71 /* Managers */,
 				ADB0955520A86EEF00152750 /* Extensions */,
+				AD90680720D69A1200B7E6E6 /* Utils */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -232,10 +242,11 @@
 		ADB0955120A85B0100152750 /* SCNNodes */ = {
 			isa = PBXGroup;
 			children = (
-				AD526E6020BB4F9A000613E2 /* BulletNode.swift */,
+				AD526E6020BB4F9A000613E2 /* BulletsNode.swift */,
 				AD526E6220BB4FA4000613E2 /* KnifeNode.swift */,
 				AD9D90BB20BC539C0032029B /* ReticleNode.swift */,
 				AD317DC020BD73D900ECA3D1 /* PlaneNode.swift */,
+				AD90680A20D6AFC400B7E6E6 /* DirectionalLightNode.swift */,
 			);
 			path = SCNNodes;
 			sourceTree = "<group>";
@@ -326,8 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD1CC1EF20CB39FB0010CB05 /* Bullet in Resources */,
-				AD1CC1ED20CB39EB0010CB05 /* Knife_01 in Resources */,
+				AD90680620D694F000B7E6E6 /* Knife in Resources */,
 				AD62C2B620A8582800AE9BAF /* LaunchScreen.storyboard in Resources */,
 				AD62C2B320A8582800AE9BAF /* Assets.xcassets in Resources */,
 				AD1CC1F320CB3AE30010CB05 /* ReticleScene.scn in Resources */,
@@ -346,6 +356,7 @@
 				AD526E6320BB4FA4000613E2 /* KnifeNode.swift in Sources */,
 				AD9D90BC20BC539C0032029B /* ReticleNode.swift in Sources */,
 				ADCB462D20B855FB00DD9E1F /* ToptalARSession.swift in Sources */,
+				AD90680B20D6AFC400B7E6E6 /* DirectionalLightNode.swift in Sources */,
 				AD1C1DF520AB48CD00CEE318 /* UIDeviceExtensions.swift in Sources */,
 				ADB0954520A85A5F00152750 /* PermissionView.swift in Sources */,
 				ADB0954A20A85AA600152750 /* MainView.swift in Sources */,
@@ -359,6 +370,7 @@
 				AD317DBF20BD6DAB00ECA3D1 /* MainViewController+ARSCNViewDelegate.swift in Sources */,
 				ADB0954320A859B900152750 /* ExportViewController.swift in Sources */,
 				AD526E5F20BB4F5C000613E2 /* SelectNodeViewController.swift in Sources */,
+				AD90680920D69A2E00B7E6E6 /* Randomness.swift in Sources */,
 				AD8C95FF20A9B03000586B71 /* GalleryManager.swift in Sources */,
 				ADB0954120A859AC00152750 /* MainViewController.swift in Sources */,
 				AD526E5C20BB4A53000613E2 /* AddButton.swift in Sources */,
@@ -367,7 +379,7 @@
 				ADB0955420A86EDD00152750 /* NextButton.swift in Sources */,
 				AD8C95FB20A9AFFB00586B71 /* AccessRequestedManager.swift in Sources */,
 				ADB0954D20A85ADE00152750 /* ExportView.swift in Sources */,
-				AD526E6120BB4F9A000613E2 /* BulletNode.swift in Sources */,
+				AD526E6120BB4F9A000613E2 /* BulletsNode.swift in Sources */,
 				AD8C95FD20A9B01500586B71 /* CameraManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
