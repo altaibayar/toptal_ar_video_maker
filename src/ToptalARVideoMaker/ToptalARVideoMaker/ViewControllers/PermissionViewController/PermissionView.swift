@@ -16,11 +16,13 @@ protocol PermissionViewDelegate: class {
 class PermissionView: UIView {
     @IBOutlet weak var cameraSwitch: UISwitch!
     @IBOutlet weak var photosSwitch: UISwitch!
+    @IBOutlet weak var recordingSwitch: UISwitch!
     @IBOutlet weak var nextButton: NextButton!
 
     weak var delegate: PermissionViewDelegate?;
     var cameraAccessManager: AccessRequestedManager!
     var galleryAccessManager: AccessRequestedManager!
+    var recordingAccessManager: AccessRequestedManager!
 
     override func didMoveToSuperview() {
         super.didMoveToSuperview();
@@ -33,6 +35,8 @@ class PermissionView: UIView {
             self.cameraAccessManager.withRequestedAccess { _ in self.setStates(); }
         } else if sender == photosSwitch {
             self.galleryAccessManager.withRequestedAccess { _ in self.setStates(); }
+        } else if sender == recordingSwitch {
+            self.recordingAccessManager.withRequestedAccess { _ in self.setStates(); }
         }
     }
     
@@ -43,8 +47,9 @@ class PermissionView: UIView {
     func setStates() {
         setSwitchState(switch: cameraSwitch, access: cameraAccessManager);
         setSwitchState(switch: photosSwitch, access: galleryAccessManager);
+        setSwitchState(switch: recordingSwitch, access: recordingAccessManager);
 
-        self.nextButton.isEnabled = !cameraAccessManager.needsRequest && !galleryAccessManager.needsRequest;
+        self.nextButton.isEnabled = !cameraAccessManager.needsRequest && !galleryAccessManager.needsRequest && !recordingAccessManager.needsRequest;
     }
 
     private func setSwitchState(switch view: UISwitch, access: AccessRequestedManager) {

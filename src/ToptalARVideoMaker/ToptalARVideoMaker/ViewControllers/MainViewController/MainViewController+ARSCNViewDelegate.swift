@@ -26,6 +26,7 @@ extension MainViewController: ARSCNViewDelegate {
     }
 
     func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
+
         guard
             let placenAnchor = anchor as? ARPlaneAnchor,
             let planeNode = node as? PlaneNode

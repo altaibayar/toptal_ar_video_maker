@@ -11,12 +11,17 @@ import ARKit
 
 extension MainViewController: ARSessionDelegate {
     func session(_ session: ARSession, didUpdate frame: ARFrame) {
+        guard false == self.contentView.isRecording else {
+            //if recording in progress, then do nothing
+            return;
+        }
+
         self.scene.update(for: frame);
     }
 
     func session(_ session: ARSession, cameraDidChangeTrackingState camera: ARCamera) {
         print("Camera state changed \(camera.trackingState)")
-        self.contentView.isUserInteractionEnabled = !camera.trackingState.canWork;
+        self.contentView.isUserInteractionEnabled = camera.trackingState.canWork;
     }
 }
 
@@ -24,13 +29,13 @@ private extension ARCamera.TrackingState {
     var canWork: Bool {
         switch self {
         case .notAvailable:
-            return true;
+            return false;
         case .limited(let reason):
             switch reason {
-            case .initializing, .relocalizing: return true;
-            default: return false;
+            case .initializing, .relocalizing: return false;
+            default: return true;
             }
-        default: return false;
+        default: return true;
         }
     }
 }

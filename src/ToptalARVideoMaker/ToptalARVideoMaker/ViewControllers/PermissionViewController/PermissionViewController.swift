@@ -14,6 +14,7 @@ class PermissionViewController: UIViewController, ContentViewController {
 
     private let cameraAccessManager: AccessRequestedManager = CameraManager();
     private let galleryAccessManager: AccessRequestedManager = GalleryManager();
+    private let recordingAccessManager: AccessRequestedManager = RecordingManager();
 
     override func viewDidLoad() {
         super.viewDidLoad();
@@ -21,12 +22,13 @@ class PermissionViewController: UIViewController, ContentViewController {
         self.contentView.delegate = self;
         self.contentView.cameraAccessManager = self.cameraAccessManager;
         self.contentView.galleryAccessManager = self.galleryAccessManager;
+        self.contentView.recordingAccessManager = self.recordingAccessManager;
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated);
 
-        if self.cameraAccessManager.stateDetermined && self.galleryAccessManager.stateDetermined {
+        if self.cameraAccessManager.stateDetermined && self.galleryAccessManager.stateDetermined && self.recordingAccessManager.stateDetermined {
             self.performSegue(withIdentifier: "main", sender: nil);
         }
     }

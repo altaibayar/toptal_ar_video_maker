@@ -24,6 +24,8 @@
 	<string>This application will use the camera for Augmented Reality.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>This application will makes super videos.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This application will makes super videos.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>This application will makes super videos.</string>
 	<key>UILaunchStoryboardName</key>

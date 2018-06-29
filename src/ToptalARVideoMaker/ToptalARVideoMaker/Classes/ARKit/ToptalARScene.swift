@@ -14,6 +14,7 @@ class ToptalARScene: SCNScene {
 
     let reticleNode = ReticleNode();
     let lightNode = DirectionalLightNode();
+    var nodes = [SCNNode]();
 
     override init() {
         super.init();
@@ -39,7 +40,15 @@ class ToptalARScene: SCNScene {
         position.y += 1.0;
         node.position = position;
 
+        let recticleAngle = self.reticleNode.eulerAngles;
+        node.eulerAngles = SCNVector3Make(recticleAngle.x, Float.pi + recticleAngle.y, recticleAngle.z);
+
+        self.nodes.append(node);
         self.rootNode.addChildNode(node);
+    }
+
+    func resetContent() {
+        self.nodes.forEach { $0.runAction(SCNAction.removeFromParentNode()); }
     }
 }
 
@@ -52,6 +61,9 @@ extension ToptalARScene {
 
         self.showReticle();
         self.reticleNode.update(position: hitTest.worldTransform.vector3);
+
+        let camera = frame.camera.transform.vector3;
+        self.reticleNode.look(at: SCNVector3Make(camera.x, reticleNode.position.y, camera.z));
     }
 }
 

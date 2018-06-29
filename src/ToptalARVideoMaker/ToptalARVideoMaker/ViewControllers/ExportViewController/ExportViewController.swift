@@ -8,9 +8,27 @@
 
 import Foundation
 import UIKit
+import AVKit
 
-class ExportViewController: UIViewController {
-    
+class ExportViewController: AVPlayerViewController {
+    var videoUrl: URL! {
+        didSet {
+            self.player = AVPlayer(url: self.videoUrl);
+        }
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad();
+        self.navigationController?.setNavigationBarHidden(false, animated: false);
+
+        self.entersFullScreenWhenPlaybackBegins = true;
+        self.exitsFullScreenWhenPlaybackEnds = true;
+    }
+
+    @IBAction func actionButtonTapped(_ sender: UIBarButtonItem) {
+        let activityVC = UIActivityViewController(activityItems: [ self.videoUrl ], applicationActivities: nil);
+        self.present(activityVC, animated: true, completion: nil);
+    }
 }
 
 extension ExportViewController: ContentViewController {

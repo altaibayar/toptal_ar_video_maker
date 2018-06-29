@@ -22,28 +22,28 @@ class MainView: UIView {
     @IBOutlet weak var sceneView: ARSCNView!
     @IBOutlet weak var recordButton: RecordButton!
     @IBOutlet weak var addButton: AddButton!
+    @IBOutlet weak var recordingIndicator: UIView!
 
     weak var delegate: MainViewDelegate?;
-    
 
     var isRecording: Bool = false {
         didSet {
-            self.layer.borderColor = isRecording ? UIColor.toptalRed.cgColor : UIColor.clear.cgColor;
-        }
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder);
-
-        self.layer.borderColor = UIColor.clear.cgColor;
-        if UIDevice.current.isIPhoneX {
-            self.layer.cornerRadius = 39.0;
+            self.recordingIndicator.backgroundColor = self.isRecording ? UIColor.toptalRed : UIColor.toptalGreen;
         }
     }
 
     override func didMoveToSuperview() {
         super.didMoveToSuperview();
+
+        self.isRecording = false;
         self.recordButton.delegate = self;
+    }
+
+    override func layoutSubviews() {
+        super.layoutSubviews();
+
+        self.recordingIndicator.layer.cornerRadius = self.recordingIndicator.bounds.height / 2.0;
+        self.recordingIndicator.layer.masksToBounds = true;
     }
 
     @IBAction func addButtonTouchUpInside(_ sender: AddButton) {

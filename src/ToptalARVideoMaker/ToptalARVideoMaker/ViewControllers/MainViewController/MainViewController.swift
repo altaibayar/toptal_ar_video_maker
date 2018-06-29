@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import ARKit
+import SceneKitVideoRecorder
 
 class MainViewController: UIViewController, ContentViewController {
     typealias ContentView = MainView
@@ -18,6 +19,7 @@ class MainViewController: UIViewController, ContentViewController {
     var session: ToptalARSession!
     let scene = ToptalARScene();
     let virtualObjectDataSource = VirtualObjectDataSource();
+    var recorder: SceneKitVideoRecorder!
 
     override func viewDidLoad() {
         super.viewDidLoad();
@@ -30,13 +32,24 @@ class MainViewController: UIViewController, ContentViewController {
         self.contentView.delegate = self;
         self.contentView.sceneView.delegate = self;
 
+        //I am optimistic
+        self.recorder = try! SceneKitVideoRecorder(scene: self.contentView.sceneView);
+
         self.contentView.sceneView.debugOptions = [ ARSCNDebugOptions.showFeaturePoints ];
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated);
 
+        self.scene.resetContent();
         self.session.resetTracking();
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated);
+        self.navigationController?.setNavigationBarHidden(true, animated: false);
+
+        self.recorder.cleanUp();
     }
 
     override func viewDidDisappear(_ animated: Bool) {
@@ -59,6 +72,17 @@ class MainViewController: UIViewController, ContentViewController {
 
             vc.virtualObjectDataSource = self.virtualObjectDataSource;
             vc.delegate = self;
+
+        } else if segue.identifier == "export" {
+
+            guard
+                let vc = segue.destination as? ExportViewController,
+                let url = sender as? URL
+                else {
+                    fatalError();
+            }
+
+            vc.videoUrl = url;
         }
     }
 
@@ -70,12 +94,20 @@ class MainViewController: UIViewController, ContentViewController {
 extension MainViewController: MainViewDelegate {
     func startRecording() {
         self.scene.hideReticle();
-        print("start recording");
+
+        print("starting recording");
+        self.recorder.startWriting().onSuccess {
+            print("recording started");
+        }
     }
 
     func stopRecording() {
         self.scene.showReticle();
-        print("stop recording");
+        print("stopping recording");
+        self.recorder.finishWriting().onSuccess { [weak self] url in
+            print("recording stopped");
+            self?.performSegue(withIdentifier: "export", sender: url);
+        }
     }
 
     func showVirtualObjectsList(source: UIView) {
