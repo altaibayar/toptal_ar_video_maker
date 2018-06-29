@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A67706601D63270B3F179EF /* Pods_ToptalARVideoMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24837E957877D90EFCE8D83 /* Pods_ToptalARVideoMaker.framework */; };
+		AD0BF7C620E6F56800970B5D /* RecordingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0BF7C520E6F56800970B5D /* RecordingManager.swift */; };
 		AD1C1DF520AB48CD00CEE318 /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1C1DF420AB48CD00CEE318 /* UIDeviceExtensions.swift */; };
 		AD1CC1F320CB3AE30010CB05 /* ReticleScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = AD1CC1F220CB3AE30010CB05 /* ReticleScene.scn */; };
 		AD317DBD20BD6D5F00ECA3D1 /* MainViewController+ARSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD317DBC20BD6D5F00ECA3D1 /* MainViewController+ARSessionDelegate.swift */; };
@@ -44,6 +46,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5AF86681203FA7ABC1857B9E /* Pods-ToptalARVideoMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToptalARVideoMaker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToptalARVideoMaker/Pods-ToptalARVideoMaker.debug.xcconfig"; sourceTree = "<group>"; };
+		5F6B31EF99507F6C02B707F0 /* Pods-ToptalARVideoMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToptalARVideoMaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToptalARVideoMaker/Pods-ToptalARVideoMaker.release.xcconfig"; sourceTree = "<group>"; };
+		A24837E957877D90EFCE8D83 /* Pods_ToptalARVideoMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToptalARVideoMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD0BF7C520E6F56800970B5D /* RecordingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingManager.swift; sourceTree = "<group>"; };
 		AD1C1DF420AB48CD00CEE318 /* UIDeviceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtensions.swift; sourceTree = "<group>"; };
 		AD1CC1F220CB3AE30010CB05 /* ReticleScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ReticleScene.scn; sourceTree = "<group>"; };
 		AD317DBC20BD6D5F00ECA3D1 /* MainViewController+ARSessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+ARSessionDelegate.swift"; sourceTree = "<group>"; };
@@ -87,12 +93,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A67706601D63270B3F179EF /* Pods_ToptalARVideoMaker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51A0F6B96F072D836631AADC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AF86681203FA7ABC1857B9E /* Pods-ToptalARVideoMaker.debug.xcconfig */,
+				5F6B31EF99507F6C02B707F0 /* Pods-ToptalARVideoMaker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD0BF7B820E6E47400970B5D /* Recording */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Recording;
+			sourceTree = "<group>";
+		};
+		AD0BF7B920E6E6F300970B5D /* ThridParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThridParty;
+			sourceTree = "<group>";
+		};
 		AD1CC1E920CB398D0010CB05 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +154,8 @@
 			children = (
 				AD62C2A820A8582700AE9BAF /* ToptalARVideoMaker */,
 				AD62C2A720A8582700AE9BAF /* Products */,
+				51A0F6B96F072D836631AADC /* Pods */,
+				B19FEFD3B1114DE5BB407A9E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +175,7 @@
 				ADB0955020A85AFB00152750 /* Classes */,
 				ADB0955220A85B2400152750 /* Views */,
 				ADB0953B20A8585500152750 /* ViewControllers */,
+				AD0BF7B920E6E6F300970B5D /* ThridParty */,
 				ADB0953D20A8585F00152750 /* Resources */,
 			);
 			path = ToptalARVideoMaker;
@@ -151,6 +184,7 @@
 		AD8C95F820A9AFC400586B71 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				AD0BF7B820E6E47400970B5D /* Recording */,
 				AD8C95F920A9AFD300586B71 /* AccessRequest */,
 			);
 			path = Managers;
@@ -162,6 +196,7 @@
 				AD8C95FA20A9AFFB00586B71 /* AccessRequestedManager.swift */,
 				AD8C95FC20A9B01500586B71 /* CameraManager.swift */,
 				AD8C95FE20A9B03000586B71 /* GalleryManager.swift */,
+				AD0BF7C520E6F56800970B5D /* RecordingManager.swift */,
 			);
 			path = AccessRequest;
 			sourceTree = "<group>";
@@ -279,6 +314,14 @@
 			path = ARKit;
 			sourceTree = "<group>";
 		};
+		B19FEFD3B1114DE5BB407A9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A24837E957877D90EFCE8D83 /* Pods_ToptalARVideoMaker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -286,9 +329,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD62C2BA20A8582800AE9BAF /* Build configuration list for PBXNativeTarget "ToptalARVideoMaker" */;
 			buildPhases = (
+				CEB4722BEAA78790B9AADECB /* [CP] Check Pods Manifest.lock */,
 				AD62C2A220A8582700AE9BAF /* Sources */,
 				AD62C2A320A8582700AE9BAF /* Frameworks */,
 				AD62C2A420A8582700AE9BAF /* Resources */,
+				E5E86391D3EB9C73FF483184 /* [CP] Embed Pods Frameworks */,
+				9FCE460039D703D994001C16 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -347,6 +393,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9FCE460039D703D994001C16 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToptalARVideoMaker/Pods-ToptalARVideoMaker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEB4722BEAA78790B9AADECB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToptalARVideoMaker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5E86391D3EB9C73FF483184 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ToptalARVideoMaker/Pods-ToptalARVideoMaker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BrightFutures/BrightFutures.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SceneKitVideoRecorder/SceneKitVideoRecorder.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BrightFutures.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SceneKitVideoRecorder.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToptalARVideoMaker/Pods-ToptalARVideoMaker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AD62C2A220A8582700AE9BAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -365,6 +469,7 @@
 				ADB0953F20A859A000152750 /* PermissionViewController.swift in Sources */,
 				AD8C960120A9D04100586B71 /* RecordButton.swift in Sources */,
 				ADE3CCBB20AB36C400E6BCAC /* ContentViewController.swift in Sources */,
+				AD0BF7C620E6F56800970B5D /* RecordingManager.swift in Sources */,
 				AD62C2AA20A8582700AE9BAF /* AppDelegate.swift in Sources */,
 				AD317DC120BD73D900ECA3D1 /* PlaneNode.swift in Sources */,
 				AD317DBF20BD6DAB00ECA3D1 /* MainViewController+ARSCNViewDelegate.swift in Sources */,
@@ -522,6 +627,7 @@
 		};
 		AD62C2BB20A8582800AE9BAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AF86681203FA7ABC1857B9E /* Pods-ToptalARVideoMaker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,6 +646,7 @@
 		};
 		AD62C2BC20A8582800AE9BAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F6B31EF99507F6C02B707F0 /* Pods-ToptalARVideoMaker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

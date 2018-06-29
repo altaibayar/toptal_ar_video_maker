@@ -1,0 +1,6 @@
+framework module SceneKitVideoRecorder {
+  umbrella header "SceneKitVideoRecorder-umbrella.h"
+
+  export *
+  module * { export * }
+}

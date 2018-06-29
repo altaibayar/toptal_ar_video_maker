@@ -1,0 +1,1048 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0191C5E2850323B9B689E5FFCD38C693 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47D8DDA9FF1BEF4F332BB43B510D090 /* Options.swift */; };
+		022E4F514A2A0B20AD41E2E71802C4B6 /* Result-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D455768125C8E645EEC3AC48953A55 /* Result-dummy.m */; };
+		03A121CFE13FFEA740F9C55D15BB74C2 /* SequenceType+BrightFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9413265D3436E36C9AD81B6D008E5D /* SequenceType+BrightFutures.swift */; };
+		0457A1C9FE3AE4576BE286D9F8C49F93 /* NSOperationQueue+BrightFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56A4B74D02CB50035568CF8C17548A1 /* NSOperationQueue+BrightFutures.swift */; };
+		0D8AEDF88BDE226E2DF80B439DD91448 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D003D930342726D2FA396EF518F6A8 /* Result.framework */; };
+		15F801282F3290E37F11D67056162741 /* Number+BrightFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467C1E2499532D94267B0EAD917C4343 /* Number+BrightFutures.swift */; };
+		1771AC7EE96C145D6FA1D853A07A7948 /* FileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B898B0B1A9B729E73B3DDBC209A0C1 /* FileController.swift */; };
+		1D09397B9B6F32408C40509E8BA3B3B5 /* AsyncType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567371268D62153EB369124C2BB54FA2 /* AsyncType.swift */; };
+		200FC3D093D4787A4767888BB3AE31F9 /* SceneKitVideoRecorder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF36FEC5B9E3DD9B22A558F4050ABB75 /* SceneKitVideoRecorder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEE25E8E89B03586428A40FC901B2F /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083385006CE4F206C29A0724FE364D50 /* BrightFutures.framework */; };
+		2244F884A18E3F9BFF659C460C1C1F97 /* AsyncType+ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AAD0AD19EDA7A1EC1000A11B5F1406 /* AsyncType+ResultType.swift */; };
+		3CC7CB9F62C114C909F57236D733B015 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74DDF5E8220EDEDED2855E383AA5EA3A /* Foundation.framework */; };
+		3CFE9A55FF9109DC08A89BE8010071E1 /* SceneKitVideoRecorder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28734A8408B6B3147DC5BB0FA3C8890A /* SceneKitVideoRecorder-dummy.m */; };
+		3EEEE02AD5C45BACC1F9381B9DB41431 /* MutableAsyncType+ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A4A48F30F17C12A0049377E77F3DB1 /* MutableAsyncType+ResultType.swift */; };
+		495C3055254AF5A66CF1D1690513AD13 /* ExecutionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992A7BD202F2D5C9365E7803590BEE50 /* ExecutionContext.swift */; };
+		4ACF666666A45CEEF2D37025F8105CC0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4841FB11511E4FB6D49B9B142E638133 /* CoreGraphics.framework */; };
+		4BA88411A73D95E600EF8420B7A1592D /* InvalidationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272358F6A526D5B2ACCE337010AE48AA /* InvalidationToken.swift */; };
+		5888C725C19F3C8C43B1AEFA7917C33E /* AsyncType+Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5BEE0EB9B2D4610B9B6452AE26B530 /* AsyncType+Debug.swift */; };
+		5CEE1F99AD1C251C995F7010D1320072 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74DDF5E8220EDEDED2855E383AA5EA3A /* Foundation.framework */; };
+		6D91A43E587F9D2C8A6988C6932E7A12 /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7C1BA71DDE6665949C65F4349E912B /* ResultProtocol.swift */; };
+		77217E1A9729A91F0AE9CACF00E0B9AB /* Result-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 742C4158605F209994047EAEA9C0FB34 /* Result-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A94090F9E6E52CB38B11A328B01BA8C /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE315D9C9FD698376DD9A74BC01F414 /* Async.swift */; };
+		90D28C0331787AE73F19F7C148A2BA4D /* MutableAsyncType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E6B5672B643331425E3FD27684632B /* MutableAsyncType.swift */; };
+		94FE42158236D806F67FD99D22E19F49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74DDF5E8220EDEDED2855E383AA5EA3A /* Foundation.framework */; };
+		964859B824FF437D8BADB3DD72E26B69 /* Dispatch+BrightFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC94201EF2C9F65EF7EAAC84D03ED02 /* Dispatch+BrightFutures.swift */; };
+		9B152AA96BFD3D49A7693768DD379503 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9705861B68ED738413A7F84E071884F /* QuartzCore.framework */; };
+		9F6262C79DBD7F79FD9C5C5659FB2D2E /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7472CB3F0B1470224EF5FC9B428EDB2A /* Promise.swift */; };
+		A061BD0136D17F6FE3D07048F4758C09 /* SceneKitVideoRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA57B73D03BB11AF45721509886EDC97 /* SceneKitVideoRecorder.swift */; };
+		A5CA685AC1415E6190791760AD06BAB4 /* Pods-ToptalARVideoMaker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2A86A169ADA3493C92ACE3B5CDC877 /* Pods-ToptalARVideoMaker-dummy.m */; };
+		B050B15EC964DC20A071903FDF1E5ABD /* Result+BrightFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273982B1680C40CD71D0DAD314CD0988 /* Result+BrightFutures.swift */; };
+		B56CF8D1DB2BB0B5A196A44C8E538762 /* BrightFutures-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC804A579DC92FA02F94E34DF59AE44 /* BrightFutures-dummy.m */; };
+		C08BEE89CC928B58103A8B8B8B7997DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74DDF5E8220EDEDED2855E383AA5EA3A /* Foundation.framework */; };
+		C99275247B983F2455A97E500BDAE8E6 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4479BC749E90EE50EF6849F6B149B7 /* Error.swift */; };
+		D499630C42A1BC53E7BE2D1EE20819B9 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB8BAE8AC5E4FFA1B20DEA197AE7724 /* Result.swift */; };
+		D88642295E1FB6EB5FB22B2ABBA6F284 /* BrightFutures-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A5CD814AEE81C1574805EE13399AE53 /* BrightFutures-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9ED839DBDA3100FB5508CDD8465E06A /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFEC8077A4DD4E1B2103CE7C8407E6E /* Metal.framework */; };
+		E109E10F23C43D393FEE4D4B46351375 /* Pods-ToptalARVideoMaker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C92346D472EBDD6DA242EEF742A26956 /* Pods-ToptalARVideoMaker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F28FFD679440F582FA473A1E816262E4 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4E813D42A8DFCEAAFA2B8009B5D59D /* Errors.swift */; };
+		F3568A4DC37D6C490ED6E87021FBDB44 /* PixelBufferFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A4C2E5F2559C76D50052493C4E365 /* PixelBufferFactory.swift */; };
+		FDD7C0AAC87A8775438C43BC31B67A96 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D003D930342726D2FA396EF518F6A8 /* Result.framework */; };
+		FF6B85305A1A7402CD4ECA474A25D080 /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171C5FBB2E761B54938BB83759EDA90A /* Future.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		113BAA29C75A3C85661AB7D5BCF626C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98CC12EEDCA0ADE298C62268125E8304;
+			remoteInfo = Result;
+		};
+		5B18053148C119714C09C6CEF6D50A17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98CC12EEDCA0ADE298C62268125E8304;
+			remoteInfo = Result;
+		};
+		90EE8FA0A4DFDFCB60C8A169B88ADDCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4551A02DCD158A5143D803E0FE76C4F6;
+			remoteInfo = BrightFutures;
+		};
+		A4290665B478A36E29D951D78D2A7452 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4551A02DCD158A5143D803E0FE76C4F6;
+			remoteInfo = BrightFutures;
+		};
+		A48E8FDB3BEF5800600422FD4DA6DC8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98CC12EEDCA0ADE298C62268125E8304;
+			remoteInfo = Result;
+		};
+		F18A728BB95F151567C879777F5D872F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A41A636D3DCB846F37AF356F4D4A1462;
+			remoteInfo = SceneKitVideoRecorder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		083385006CE4F206C29A0724FE364D50 /* BrightFutures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BrightFutures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08D455768125C8E645EEC3AC48953A55 /* Result-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Result-dummy.m"; sourceTree = "<group>"; };
+		0A5CD814AEE81C1574805EE13399AE53 /* BrightFutures-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BrightFutures-umbrella.h"; sourceTree = "<group>"; };
+		0F82C7C17E3420F1D9727943EEC97127 /* Result-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Result-prefix.pch"; sourceTree = "<group>"; };
+		14B898B0B1A9B729E73B3DDBC209A0C1 /* FileController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileController.swift; path = SceneKitVideoRecorder/Classes/FileController.swift; sourceTree = "<group>"; };
+		15DBC6E87EABB782067C0033DCB513B0 /* SceneKitVideoRecorder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SceneKitVideoRecorder-prefix.pch"; sourceTree = "<group>"; };
+		171C5FBB2E761B54938BB83759EDA90A /* Future.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Future.swift; path = Sources/BrightFutures/Future.swift; sourceTree = "<group>"; };
+		1BB8BAE8AC5E4FFA1B20DEA197AE7724 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Result/Result.swift; sourceTree = "<group>"; };
+		24EB8E6E7F2E0E9054305BA9F745836B /* Pods-ToptalARVideoMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ToptalARVideoMaker.debug.xcconfig"; sourceTree = "<group>"; };
+		272358F6A526D5B2ACCE337010AE48AA /* InvalidationToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InvalidationToken.swift; path = Sources/BrightFutures/InvalidationToken.swift; sourceTree = "<group>"; };
+		273982B1680C40CD71D0DAD314CD0988 /* Result+BrightFutures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+BrightFutures.swift"; path = "Sources/BrightFutures/Result+BrightFutures.swift"; sourceTree = "<group>"; };
+		28734A8408B6B3147DC5BB0FA3C8890A /* SceneKitVideoRecorder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SceneKitVideoRecorder-dummy.m"; sourceTree = "<group>"; };
+		2ECA56BBE49936E57B52090AE211CB0F /* SceneKitVideoRecorder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SceneKitVideoRecorder.modulemap; sourceTree = "<group>"; };
+		3A4E813D42A8DFCEAAFA2B8009B5D59D /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/BrightFutures/Errors.swift; sourceTree = "<group>"; };
+		3BD176618FA2BF6F2224D5E18BF44870 /* Pods-ToptalARVideoMaker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ToptalARVideoMaker.modulemap"; sourceTree = "<group>"; };
+		42AE35135D4C9A7E8A9418E4D96167D4 /* Result.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Result.modulemap; sourceTree = "<group>"; };
+		439F147A8112AE4E9921DEB5AA2CD544 /* SceneKitVideoRecorder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SceneKitVideoRecorder.xcconfig; sourceTree = "<group>"; };
+		467C1E2499532D94267B0EAD917C4343 /* Number+BrightFutures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Number+BrightFutures.swift"; path = "Sources/BrightFutures/Number+BrightFutures.swift"; sourceTree = "<group>"; };
+		47D5A5BEC63D479F1CE27AEDE172D008 /* SceneKitVideoRecorder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SceneKitVideoRecorder.framework; path = SceneKitVideoRecorder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4841FB11511E4FB6D49B9B142E638133 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		4B3AA26499344B2A3AFFF0317DFE16FD /* Pods-ToptalARVideoMaker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ToptalARVideoMaker-acknowledgements.plist"; sourceTree = "<group>"; };
+		567371268D62153EB369124C2BB54FA2 /* AsyncType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncType.swift; path = Sources/BrightFutures/AsyncType.swift; sourceTree = "<group>"; };
+		58B1886C75706EF5DBE8D3464EDBAE75 /* Pods-ToptalARVideoMaker-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ToptalARVideoMaker-resources.sh"; sourceTree = "<group>"; };
+		5B2A86A169ADA3493C92ACE3B5CDC877 /* Pods-ToptalARVideoMaker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ToptalARVideoMaker-dummy.m"; sourceTree = "<group>"; };
+		5B7C1BA71DDE6665949C65F4349E912B /* ResultProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultProtocol.swift; path = Result/ResultProtocol.swift; sourceTree = "<group>"; };
+		5EE2428F5589A25E10758478C0E90EF2 /* Pods_ToptalARVideoMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ToptalARVideoMaker.framework; path = "Pods-ToptalARVideoMaker.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60A4A48F30F17C12A0049377E77F3DB1 /* MutableAsyncType+ResultType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MutableAsyncType+ResultType.swift"; path = "Sources/BrightFutures/MutableAsyncType+ResultType.swift"; sourceTree = "<group>"; };
+		65A24A275EB7A62AA375DB81167BCF93 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Result.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CE315D9C9FD698376DD9A74BC01F414 /* Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Async.swift; path = Sources/BrightFutures/Async.swift; sourceTree = "<group>"; };
+		72348937A67FB3D25ABEAFF479C24210 /* BrightFutures.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BrightFutures.modulemap; sourceTree = "<group>"; };
+		72D003D930342726D2FA396EF518F6A8 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		742C4158605F209994047EAEA9C0FB34 /* Result-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Result-umbrella.h"; sourceTree = "<group>"; };
+		7472CB3F0B1470224EF5FC9B428EDB2A /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Sources/BrightFutures/Promise.swift; sourceTree = "<group>"; };
+		74DDF5E8220EDEDED2855E383AA5EA3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		817B052391FBB8DD7AC2D1A9A4BA6A4B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A5ABB1DE269F53FCD021A83B2FC4C48 /* BrightFutures-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BrightFutures-prefix.pch"; sourceTree = "<group>"; };
+		8CA0C274D80FB564AB0858616693B046 /* BrightFutures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BrightFutures.framework; path = BrightFutures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95AAD0AD19EDA7A1EC1000A11B5F1406 /* AsyncType+ResultType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AsyncType+ResultType.swift"; path = "Sources/BrightFutures/AsyncType+ResultType.swift"; sourceTree = "<group>"; };
+		97AFE4671DFE010C1FED4BB862977156 /* Pods-ToptalARVideoMaker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ToptalARVideoMaker-acknowledgements.markdown"; sourceTree = "<group>"; };
+		992A7BD202F2D5C9365E7803590BEE50 /* ExecutionContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExecutionContext.swift; path = Sources/BrightFutures/ExecutionContext.swift; sourceTree = "<group>"; };
+		ABC94201EF2C9F65EF7EAAC84D03ED02 /* Dispatch+BrightFutures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dispatch+BrightFutures.swift"; path = "Sources/BrightFutures/Dispatch+BrightFutures.swift"; sourceTree = "<group>"; };
+		AE9413265D3436E36C9AD81B6D008E5D /* SequenceType+BrightFutures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SequenceType+BrightFutures.swift"; path = "Sources/BrightFutures/SequenceType+BrightFutures.swift"; sourceTree = "<group>"; };
+		AFC804A579DC92FA02F94E34DF59AE44 /* BrightFutures-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BrightFutures-dummy.m"; sourceTree = "<group>"; };
+		BA4479BC749E90EE50EF6849F6B149B7 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = SceneKitVideoRecorder/Classes/Error.swift; sourceTree = "<group>"; };
+		BF36FEC5B9E3DD9B22A558F4050ABB75 /* SceneKitVideoRecorder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SceneKitVideoRecorder-umbrella.h"; sourceTree = "<group>"; };
+		C274B7ECBCA8B8642DC995869E5E09C5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3AE82B279D5259C571C39367D71BE2C /* Result.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Result.xcconfig; sourceTree = "<group>"; };
+		C4E6B5672B643331425E3FD27684632B /* MutableAsyncType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutableAsyncType.swift; path = Sources/BrightFutures/MutableAsyncType.swift; sourceTree = "<group>"; };
+		C92346D472EBDD6DA242EEF742A26956 /* Pods-ToptalARVideoMaker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ToptalARVideoMaker-umbrella.h"; sourceTree = "<group>"; };
+		CA57B73D03BB11AF45721509886EDC97 /* SceneKitVideoRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneKitVideoRecorder.swift; path = SceneKitVideoRecorder/Classes/SceneKitVideoRecorder.swift; sourceTree = "<group>"; };
+		CC69EF620F6B0173366B016C2C73C68F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE6A4C2E5F2559C76D50052493C4E365 /* PixelBufferFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PixelBufferFactory.swift; path = SceneKitVideoRecorder/Classes/PixelBufferFactory.swift; sourceTree = "<group>"; };
+		D56A4B74D02CB50035568CF8C17548A1 /* NSOperationQueue+BrightFutures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSOperationQueue+BrightFutures.swift"; path = "Sources/BrightFutures/NSOperationQueue+BrightFutures.swift"; sourceTree = "<group>"; };
+		D9705861B68ED738413A7F84E071884F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		E47D8DDA9FF1BEF4F332BB43B510D090 /* Options.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Options.swift; path = SceneKitVideoRecorder/Classes/Options.swift; sourceTree = "<group>"; };
+		E9AE2CA7563A005E0376FB06F6DF689F /* Pods-ToptalARVideoMaker-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ToptalARVideoMaker-frameworks.sh"; sourceTree = "<group>"; };
+		EBFEC8077A4DD4E1B2103CE7C8407E6E /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Metal.framework; sourceTree = DEVELOPER_DIR; };
+		ED5BEE0EB9B2D4610B9B6452AE26B530 /* AsyncType+Debug.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AsyncType+Debug.swift"; path = "Sources/BrightFutures/AsyncType+Debug.swift"; sourceTree = "<group>"; };
+		F0D79F867DD4BC766730E2C7CEB9F345 /* Pods-ToptalARVideoMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ToptalARVideoMaker.release.xcconfig"; sourceTree = "<group>"; };
+		F27A6E655A0C74314F0E45048D64B135 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F777120DE5900036409C820A48A78E44 /* BrightFutures.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BrightFutures.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38CB1092BDC921FC648FB1EAD99D9361 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94FE42158236D806F67FD99D22E19F49 /* Foundation.framework in Frameworks */,
+				FDD7C0AAC87A8775438C43BC31B67A96 /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79D15A7A220533A956BA1E820096011B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20CEE25E8E89B03586428A40FC901B2F /* BrightFutures.framework in Frameworks */,
+				4ACF666666A45CEEF2D37025F8105CC0 /* CoreGraphics.framework in Frameworks */,
+				5CEE1F99AD1C251C995F7010D1320072 /* Foundation.framework in Frameworks */,
+				D9ED839DBDA3100FB5508CDD8465E06A /* Metal.framework in Frameworks */,
+				9B152AA96BFD3D49A7693768DD379503 /* QuartzCore.framework in Frameworks */,
+				0D8AEDF88BDE226E2DF80B439DD91448 /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC846C5D54A6237608C0F6119E60EB13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CC7CB9F62C114C909F57236D733B015 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD3C655876A5D6C2F568734B2CCDFBF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C08BEE89CC928B58103A8B8B8B7997DF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DB7E431F71932A6C7C9E59B37AC15B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CA0C274D80FB564AB0858616693B046 /* BrightFutures.framework */,
+				5EE2428F5589A25E10758478C0E90EF2 /* Pods_ToptalARVideoMaker.framework */,
+				65A24A275EB7A62AA375DB81167BCF93 /* Result.framework */,
+				47D5A5BEC63D479F1CE27AEDE172D008 /* SceneKitVideoRecorder.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2681773F9EB006F5B5FD145786BF019C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				72348937A67FB3D25ABEAFF479C24210 /* BrightFutures.modulemap */,
+				F777120DE5900036409C820A48A78E44 /* BrightFutures.xcconfig */,
+				AFC804A579DC92FA02F94E34DF59AE44 /* BrightFutures-dummy.m */,
+				8A5ABB1DE269F53FCD021A83B2FC4C48 /* BrightFutures-prefix.pch */,
+				0A5CD814AEE81C1574805EE13399AE53 /* BrightFutures-umbrella.h */,
+				F27A6E655A0C74314F0E45048D64B135 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BrightFutures";
+			sourceTree = "<group>";
+		};
+		2F931EC64D97391B6878668111799767 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				50254538BB808CA4A66323A43EB754F3 /* Pods-ToptalARVideoMaker */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4BDEEF083A3FEFE6E00AF7C5E3D8B896 /* BrightFutures */ = {
+			isa = PBXGroup;
+			children = (
+				6CE315D9C9FD698376DD9A74BC01F414 /* Async.swift */,
+				567371268D62153EB369124C2BB54FA2 /* AsyncType.swift */,
+				ED5BEE0EB9B2D4610B9B6452AE26B530 /* AsyncType+Debug.swift */,
+				95AAD0AD19EDA7A1EC1000A11B5F1406 /* AsyncType+ResultType.swift */,
+				ABC94201EF2C9F65EF7EAAC84D03ED02 /* Dispatch+BrightFutures.swift */,
+				3A4E813D42A8DFCEAAFA2B8009B5D59D /* Errors.swift */,
+				992A7BD202F2D5C9365E7803590BEE50 /* ExecutionContext.swift */,
+				171C5FBB2E761B54938BB83759EDA90A /* Future.swift */,
+				272358F6A526D5B2ACCE337010AE48AA /* InvalidationToken.swift */,
+				C4E6B5672B643331425E3FD27684632B /* MutableAsyncType.swift */,
+				60A4A48F30F17C12A0049377E77F3DB1 /* MutableAsyncType+ResultType.swift */,
+				D56A4B74D02CB50035568CF8C17548A1 /* NSOperationQueue+BrightFutures.swift */,
+				467C1E2499532D94267B0EAD917C4343 /* Number+BrightFutures.swift */,
+				7472CB3F0B1470224EF5FC9B428EDB2A /* Promise.swift */,
+				273982B1680C40CD71D0DAD314CD0988 /* Result+BrightFutures.swift */,
+				AE9413265D3436E36C9AD81B6D008E5D /* SequenceType+BrightFutures.swift */,
+				2681773F9EB006F5B5FD145786BF019C /* Support Files */,
+			);
+			name = BrightFutures;
+			path = BrightFutures;
+			sourceTree = "<group>";
+		};
+		4F7EBB2FE106D77250AFB00D7C98B54F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4841FB11511E4FB6D49B9B142E638133 /* CoreGraphics.framework */,
+				74DDF5E8220EDEDED2855E383AA5EA3A /* Foundation.framework */,
+				EBFEC8077A4DD4E1B2103CE7C8407E6E /* Metal.framework */,
+				D9705861B68ED738413A7F84E071884F /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		50254538BB808CA4A66323A43EB754F3 /* Pods-ToptalARVideoMaker */ = {
+			isa = PBXGroup;
+			children = (
+				C274B7ECBCA8B8642DC995869E5E09C5 /* Info.plist */,
+				3BD176618FA2BF6F2224D5E18BF44870 /* Pods-ToptalARVideoMaker.modulemap */,
+				97AFE4671DFE010C1FED4BB862977156 /* Pods-ToptalARVideoMaker-acknowledgements.markdown */,
+				4B3AA26499344B2A3AFFF0317DFE16FD /* Pods-ToptalARVideoMaker-acknowledgements.plist */,
+				5B2A86A169ADA3493C92ACE3B5CDC877 /* Pods-ToptalARVideoMaker-dummy.m */,
+				E9AE2CA7563A005E0376FB06F6DF689F /* Pods-ToptalARVideoMaker-frameworks.sh */,
+				58B1886C75706EF5DBE8D3464EDBAE75 /* Pods-ToptalARVideoMaker-resources.sh */,
+				C92346D472EBDD6DA242EEF742A26956 /* Pods-ToptalARVideoMaker-umbrella.h */,
+				24EB8E6E7F2E0E9054305BA9F745836B /* Pods-ToptalARVideoMaker.debug.xcconfig */,
+				F0D79F867DD4BC766730E2C7CEB9F345 /* Pods-ToptalARVideoMaker.release.xcconfig */,
+			);
+			name = "Pods-ToptalARVideoMaker";
+			path = "Target Support Files/Pods-ToptalARVideoMaker";
+			sourceTree = "<group>";
+		};
+		609ED5F36351E546C3FA6B2D2897283B /* SceneKitVideoRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				BA4479BC749E90EE50EF6849F6B149B7 /* Error.swift */,
+				14B898B0B1A9B729E73B3DDBC209A0C1 /* FileController.swift */,
+				E47D8DDA9FF1BEF4F332BB43B510D090 /* Options.swift */,
+				CE6A4C2E5F2559C76D50052493C4E365 /* PixelBufferFactory.swift */,
+				CA57B73D03BB11AF45721509886EDC97 /* SceneKitVideoRecorder.swift */,
+				95043625A15337E36BF66970B2FC2F9E /* Support Files */,
+			);
+			name = SceneKitVideoRecorder;
+			path = SceneKitVideoRecorder;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				8DD6E9D60E0516DE0E82D0E20AAB7D79 /* Frameworks */,
+				DAADA0748A2D0D2BC32925682BAD43C8 /* Pods */,
+				0DB7E431F71932A6C7C9E59B37AC15B7 /* Products */,
+				2F931EC64D97391B6878668111799767 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8DD6E9D60E0516DE0E82D0E20AAB7D79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				083385006CE4F206C29A0724FE364D50 /* BrightFutures.framework */,
+				72D003D930342726D2FA396EF518F6A8 /* Result.framework */,
+				4F7EBB2FE106D77250AFB00D7C98B54F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95043625A15337E36BF66970B2FC2F9E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				817B052391FBB8DD7AC2D1A9A4BA6A4B /* Info.plist */,
+				2ECA56BBE49936E57B52090AE211CB0F /* SceneKitVideoRecorder.modulemap */,
+				439F147A8112AE4E9921DEB5AA2CD544 /* SceneKitVideoRecorder.xcconfig */,
+				28734A8408B6B3147DC5BB0FA3C8890A /* SceneKitVideoRecorder-dummy.m */,
+				15DBC6E87EABB782067C0033DCB513B0 /* SceneKitVideoRecorder-prefix.pch */,
+				BF36FEC5B9E3DD9B22A558F4050ABB75 /* SceneKitVideoRecorder-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SceneKitVideoRecorder";
+			sourceTree = "<group>";
+		};
+		B058AE9A56284A83B15E69230047063E /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				1BB8BAE8AC5E4FFA1B20DEA197AE7724 /* Result.swift */,
+				5B7C1BA71DDE6665949C65F4349E912B /* ResultProtocol.swift */,
+				E93D9D6D93FCD0CC6DB224565E6E3970 /* Support Files */,
+			);
+			name = Result;
+			path = Result;
+			sourceTree = "<group>";
+		};
+		DAADA0748A2D0D2BC32925682BAD43C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4BDEEF083A3FEFE6E00AF7C5E3D8B896 /* BrightFutures */,
+				B058AE9A56284A83B15E69230047063E /* Result */,
+				609ED5F36351E546C3FA6B2D2897283B /* SceneKitVideoRecorder */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E93D9D6D93FCD0CC6DB224565E6E3970 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC69EF620F6B0173366B016C2C73C68F /* Info.plist */,
+				42AE35135D4C9A7E8A9418E4D96167D4 /* Result.modulemap */,
+				C3AE82B279D5259C571C39367D71BE2C /* Result.xcconfig */,
+				08D455768125C8E645EEC3AC48953A55 /* Result-dummy.m */,
+				0F82C7C17E3420F1D9727943EEC97127 /* Result-prefix.pch */,
+				742C4158605F209994047EAEA9C0FB34 /* Result-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Result";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		20C24886933A0D4494B19936CB3CBE7A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				200FC3D093D4787A4767888BB3AE31F9 /* SceneKitVideoRecorder-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49FC9E2A2A3595A5A25198389607A6E7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77217E1A9729A91F0AE9CACF00E0B9AB /* Result-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		657A8C35E55193C37ABBD12BC711CFFC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D88642295E1FB6EB5FB22B2ABBA6F284 /* BrightFutures-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C64280DD9C7E765477802B7B4BE16F6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E109E10F23C43D393FEE4D4B46351375 /* Pods-ToptalARVideoMaker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4551A02DCD158A5143D803E0FE76C4F6 /* BrightFutures */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B672D37492B7A470C959A56DEDEF5E1F /* Build configuration list for PBXNativeTarget "BrightFutures" */;
+			buildPhases = (
+				658F019914606347AE91EBEC28DA02F0 /* Sources */,
+				38CB1092BDC921FC648FB1EAD99D9361 /* Frameworks */,
+				657A8C35E55193C37ABBD12BC711CFFC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95400C1D68343568C91FD888D532F43F /* PBXTargetDependency */,
+			);
+			name = BrightFutures;
+			productName = BrightFutures;
+			productReference = 8CA0C274D80FB564AB0858616693B046 /* BrightFutures.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		80698B6B583332E4DA31BADF853F5937 /* Pods-ToptalARVideoMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA007C3F6FA4F1F89892CF9430E130D9 /* Build configuration list for PBXNativeTarget "Pods-ToptalARVideoMaker" */;
+			buildPhases = (
+				7A85C3BCDE0E77A17466A379316278DF /* Sources */,
+				CD3C655876A5D6C2F568734B2CCDFBF5 /* Frameworks */,
+				7C64280DD9C7E765477802B7B4BE16F6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49215F200A6B58299DE4FC88B7EA1D70 /* PBXTargetDependency */,
+				57A3293BEE715756E07A7C48A8AFF92B /* PBXTargetDependency */,
+				E7D64491A5ACE403EECA330720D16822 /* PBXTargetDependency */,
+			);
+			name = "Pods-ToptalARVideoMaker";
+			productName = "Pods-ToptalARVideoMaker";
+			productReference = 5EE2428F5589A25E10758478C0E90EF2 /* Pods_ToptalARVideoMaker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		98CC12EEDCA0ADE298C62268125E8304 /* Result */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D591FFAD2AE039FA44A37DA6EEE9CD13 /* Build configuration list for PBXNativeTarget "Result" */;
+			buildPhases = (
+				2DE86A79E3FEB97F0F8E6C89CB07B47C /* Sources */,
+				BC846C5D54A6237608C0F6119E60EB13 /* Frameworks */,
+				49FC9E2A2A3595A5A25198389607A6E7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Result;
+			productName = Result;
+			productReference = 65A24A275EB7A62AA375DB81167BCF93 /* Result.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A41A636D3DCB846F37AF356F4D4A1462 /* SceneKitVideoRecorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 028BE8CC5E603E60E7A6AC82E9EB9B13 /* Build configuration list for PBXNativeTarget "SceneKitVideoRecorder" */;
+			buildPhases = (
+				19784C9AC3B8FF9FB03A2D5C914736CD /* Sources */,
+				79D15A7A220533A956BA1E820096011B /* Frameworks */,
+				20C24886933A0D4494B19936CB3CBE7A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E95335079CEE3D6A6CE0DB0CABD7B341 /* PBXTargetDependency */,
+				3E31BB6F53E83A16A5D1D9E85BE3FB24 /* PBXTargetDependency */,
+			);
+			name = SceneKitVideoRecorder;
+			productName = SceneKitVideoRecorder;
+			productReference = 47D5A5BEC63D479F1CE27AEDE172D008 /* SceneKitVideoRecorder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 0DB7E431F71932A6C7C9E59B37AC15B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4551A02DCD158A5143D803E0FE76C4F6 /* BrightFutures */,
+				80698B6B583332E4DA31BADF853F5937 /* Pods-ToptalARVideoMaker */,
+				98CC12EEDCA0ADE298C62268125E8304 /* Result */,
+				A41A636D3DCB846F37AF356F4D4A1462 /* SceneKitVideoRecorder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19784C9AC3B8FF9FB03A2D5C914736CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C99275247B983F2455A97E500BDAE8E6 /* Error.swift in Sources */,
+				1771AC7EE96C145D6FA1D853A07A7948 /* FileController.swift in Sources */,
+				0191C5E2850323B9B689E5FFCD38C693 /* Options.swift in Sources */,
+				F3568A4DC37D6C490ED6E87021FBDB44 /* PixelBufferFactory.swift in Sources */,
+				3CFE9A55FF9109DC08A89BE8010071E1 /* SceneKitVideoRecorder-dummy.m in Sources */,
+				A061BD0136D17F6FE3D07048F4758C09 /* SceneKitVideoRecorder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE86A79E3FEB97F0F8E6C89CB07B47C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022E4F514A2A0B20AD41E2E71802C4B6 /* Result-dummy.m in Sources */,
+				D499630C42A1BC53E7BE2D1EE20819B9 /* Result.swift in Sources */,
+				6D91A43E587F9D2C8A6988C6932E7A12 /* ResultProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		658F019914606347AE91EBEC28DA02F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A94090F9E6E52CB38B11A328B01BA8C /* Async.swift in Sources */,
+				5888C725C19F3C8C43B1AEFA7917C33E /* AsyncType+Debug.swift in Sources */,
+				2244F884A18E3F9BFF659C460C1C1F97 /* AsyncType+ResultType.swift in Sources */,
+				1D09397B9B6F32408C40509E8BA3B3B5 /* AsyncType.swift in Sources */,
+				B56CF8D1DB2BB0B5A196A44C8E538762 /* BrightFutures-dummy.m in Sources */,
+				964859B824FF437D8BADB3DD72E26B69 /* Dispatch+BrightFutures.swift in Sources */,
+				F28FFD679440F582FA473A1E816262E4 /* Errors.swift in Sources */,
+				495C3055254AF5A66CF1D1690513AD13 /* ExecutionContext.swift in Sources */,
+				FF6B85305A1A7402CD4ECA474A25D080 /* Future.swift in Sources */,
+				4BA88411A73D95E600EF8420B7A1592D /* InvalidationToken.swift in Sources */,
+				3EEEE02AD5C45BACC1F9381B9DB41431 /* MutableAsyncType+ResultType.swift in Sources */,
+				90D28C0331787AE73F19F7C148A2BA4D /* MutableAsyncType.swift in Sources */,
+				0457A1C9FE3AE4576BE286D9F8C49F93 /* NSOperationQueue+BrightFutures.swift in Sources */,
+				15F801282F3290E37F11D67056162741 /* Number+BrightFutures.swift in Sources */,
+				9F6262C79DBD7F79FD9C5C5659FB2D2E /* Promise.swift in Sources */,
+				B050B15EC964DC20A071903FDF1E5ABD /* Result+BrightFutures.swift in Sources */,
+				03A121CFE13FFEA740F9C55D15BB74C2 /* SequenceType+BrightFutures.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A85C3BCDE0E77A17466A379316278DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CA685AC1415E6190791760AD06BAB4 /* Pods-ToptalARVideoMaker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E31BB6F53E83A16A5D1D9E85BE3FB24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Result;
+			target = 98CC12EEDCA0ADE298C62268125E8304 /* Result */;
+			targetProxy = 113BAA29C75A3C85661AB7D5BCF626C4 /* PBXContainerItemProxy */;
+		};
+		49215F200A6B58299DE4FC88B7EA1D70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BrightFutures;
+			target = 4551A02DCD158A5143D803E0FE76C4F6 /* BrightFutures */;
+			targetProxy = 90EE8FA0A4DFDFCB60C8A169B88ADDCF /* PBXContainerItemProxy */;
+		};
+		57A3293BEE715756E07A7C48A8AFF92B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Result;
+			target = 98CC12EEDCA0ADE298C62268125E8304 /* Result */;
+			targetProxy = 5B18053148C119714C09C6CEF6D50A17 /* PBXContainerItemProxy */;
+		};
+		95400C1D68343568C91FD888D532F43F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Result;
+			target = 98CC12EEDCA0ADE298C62268125E8304 /* Result */;
+			targetProxy = A48E8FDB3BEF5800600422FD4DA6DC8B /* PBXContainerItemProxy */;
+		};
+		E7D64491A5ACE403EECA330720D16822 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SceneKitVideoRecorder;
+			target = A41A636D3DCB846F37AF356F4D4A1462 /* SceneKitVideoRecorder */;
+			targetProxy = F18A728BB95F151567C879777F5D872F /* PBXContainerItemProxy */;
+		};
+		E95335079CEE3D6A6CE0DB0CABD7B341 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BrightFutures;
+			target = 4551A02DCD158A5143D803E0FE76C4F6 /* BrightFutures */;
+			targetProxy = A4290665B478A36E29D951D78D2A7452 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3D50EEFAAD21DBA594E28B42B8C413C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F777120DE5900036409C820A48A78E44 /* BrightFutures.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BrightFutures/BrightFutures-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BrightFutures/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BrightFutures/BrightFutures.modulemap";
+				PRODUCT_NAME = BrightFutures;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		593C80123976E098868BEE9CE5AD75E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24EB8E6E7F2E0E9054305BA9F745836B /* Pods-ToptalARVideoMaker.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ToptalARVideoMaker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ToptalARVideoMaker/Pods-ToptalARVideoMaker.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ToptalARVideoMaker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		65133C87A3F757EFFE0914DAEE34F622 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 439F147A8112AE4E9921DEB5AA2CD544 /* SceneKitVideoRecorder.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SceneKitVideoRecorder/SceneKitVideoRecorder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SceneKitVideoRecorder/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SceneKitVideoRecorder/SceneKitVideoRecorder.modulemap";
+				PRODUCT_NAME = SceneKitVideoRecorder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7BDE18386563A50F5388BC9BFDE9C6A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 439F147A8112AE4E9921DEB5AA2CD544 /* SceneKitVideoRecorder.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SceneKitVideoRecorder/SceneKitVideoRecorder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SceneKitVideoRecorder/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SceneKitVideoRecorder/SceneKitVideoRecorder.modulemap";
+				PRODUCT_NAME = SceneKitVideoRecorder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9AAC6E1651ECDCB1C81F9D3BCB39F0DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0D79F867DD4BC766730E2C7CEB9F345 /* Pods-ToptalARVideoMaker.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ToptalARVideoMaker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ToptalARVideoMaker/Pods-ToptalARVideoMaker.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ToptalARVideoMaker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A20B0BDFC4838E55DCAD094ED2792393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B0A593F68B56F38B4F21CC886D5DFE2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3AE82B279D5259C571C39367D71BE2C /* Result.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Result/Result-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Result/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Result/Result.modulemap";
+				PRODUCT_NAME = Result;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B53EDD60891CA0A99618C4BA3DEEBB79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D97385F911FCC5F0E66D68A4017C7991 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3AE82B279D5259C571C39367D71BE2C /* Result.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Result/Result-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Result/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Result/Result.modulemap";
+				PRODUCT_NAME = Result;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F88D9BB056DCCD46321B4E97A20F0A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F777120DE5900036409C820A48A78E44 /* BrightFutures.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BrightFutures/BrightFutures-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BrightFutures/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BrightFutures/BrightFutures.modulemap";
+				PRODUCT_NAME = BrightFutures;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		028BE8CC5E603E60E7A6AC82E9EB9B13 /* Build configuration list for PBXNativeTarget "SceneKitVideoRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65133C87A3F757EFFE0914DAEE34F622 /* Debug */,
+				7BDE18386563A50F5388BC9BFDE9C6A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B53EDD60891CA0A99618C4BA3DEEBB79 /* Debug */,
+				A20B0BDFC4838E55DCAD094ED2792393 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B672D37492B7A470C959A56DEDEF5E1F /* Build configuration list for PBXNativeTarget "BrightFutures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D50EEFAAD21DBA594E28B42B8C413C1 /* Debug */,
+				F88D9BB056DCCD46321B4E97A20F0A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D591FFAD2AE039FA44A37DA6EEE9CD13 /* Build configuration list for PBXNativeTarget "Result" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0A593F68B56F38B4F21CC886D5DFE2A /* Debug */,
+				D97385F911FCC5F0E66D68A4017C7991 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA007C3F6FA4F1F89892CF9430E130D9 /* Build configuration list for PBXNativeTarget "Pods-ToptalARVideoMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				593C80123976E098868BEE9CE5AD75E6 /* Debug */,
+				9AAC6E1651ECDCB1C81F9D3BCB39F0DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
