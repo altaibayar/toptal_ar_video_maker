@@ -11,6 +11,10 @@ import SceneKit
 
 class BulletsNode: SCNNode {
 
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
     override init() {
         super.init();
 
@@ -20,10 +24,6 @@ class BulletsNode: SCNNode {
             node.position =  pos;
             self.addChildNode(node);
         }
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
 
     private func sphereGeometry() -> SCNGeometry {
