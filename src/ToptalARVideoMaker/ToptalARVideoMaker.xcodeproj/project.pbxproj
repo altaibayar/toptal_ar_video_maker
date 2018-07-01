@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3A67706601D63270B3F179EF /* Pods_ToptalARVideoMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24837E957877D90EFCE8D83 /* Pods_ToptalARVideoMaker.framework */; };
 		AD0BF7C620E6F56800970B5D /* RecordingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0BF7C520E6F56800970B5D /* RecordingManager.swift */; };
+		AD19633D20E9034900F6E4C9 /* SCNNodeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19633C20E9034900F6E4C9 /* SCNNodeExtensions.swift */; };
 		AD1C1DF520AB48CD00CEE318 /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1C1DF420AB48CD00CEE318 /* UIDeviceExtensions.swift */; };
 		AD1CC1F320CB3AE30010CB05 /* ReticleScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = AD1CC1F220CB3AE30010CB05 /* ReticleScene.scn */; };
 		AD317DBD20BD6D5F00ECA3D1 /* MainViewController+ARSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD317DBC20BD6D5F00ECA3D1 /* MainViewController+ARSessionDelegate.swift */; };
@@ -50,6 +51,7 @@
 		5F6B31EF99507F6C02B707F0 /* Pods-ToptalARVideoMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToptalARVideoMaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToptalARVideoMaker/Pods-ToptalARVideoMaker.release.xcconfig"; sourceTree = "<group>"; };
 		A24837E957877D90EFCE8D83 /* Pods_ToptalARVideoMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToptalARVideoMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD0BF7C520E6F56800970B5D /* RecordingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingManager.swift; sourceTree = "<group>"; };
+		AD19633C20E9034900F6E4C9 /* SCNNodeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNNodeExtensions.swift; sourceTree = "<group>"; };
 		AD1C1DF420AB48CD00CEE318 /* UIDeviceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtensions.swift; sourceTree = "<group>"; };
 		AD1CC1F220CB3AE30010CB05 /* ReticleScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ReticleScene.scn; sourceTree = "<group>"; };
 		AD317DBC20BD6D5F00ECA3D1 /* MainViewController+ARSessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+ARSessionDelegate.swift"; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 			children = (
 				ADB0955620A86EFE00152750 /* UIColorExtensions.swift */,
 				AD1C1DF420AB48CD00CEE318 /* UIDeviceExtensions.swift */,
+				AD19633C20E9034900F6E4C9 /* SCNNodeExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -460,6 +463,7 @@
 				AD526E6320BB4FA4000613E2 /* KnifeNode.swift in Sources */,
 				AD9D90BC20BC539C0032029B /* ReticleNode.swift in Sources */,
 				ADCB462D20B855FB00DD9E1F /* ToptalARSession.swift in Sources */,
+				AD19633D20E9034900F6E4C9 /* SCNNodeExtensions.swift in Sources */,
 				AD90680B20D6AFC400B7E6E6 /* DirectionalLightNode.swift in Sources */,
 				AD1C1DF520AB48CD00CEE318 /* UIDeviceExtensions.swift in Sources */,
 				ADB0954520A85A5F00152750 /* PermissionView.swift in Sources */,

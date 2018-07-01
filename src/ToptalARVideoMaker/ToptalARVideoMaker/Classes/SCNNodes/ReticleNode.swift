@@ -28,16 +28,4 @@ class ReticleNode: SCNNode {
     func update(position: SCNVector3) {
         self.position = position;
     }
-
-    func showReticle() {
-        if self.isHidden {
-            self.runAction(SCNAction.unhide());
-        }
-    }
-
-    func hideReticle() {
-        if !self.isHidden {
-            self.runAction(SCNAction.hide());
-        }
-    }
 }

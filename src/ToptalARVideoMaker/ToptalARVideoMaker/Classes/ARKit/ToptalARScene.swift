@@ -19,7 +19,7 @@ class ToptalARScene: SCNScene {
     override init() {
         super.init();
 
-        self.reticleNode.hideReticle();
+        self.reticleNode.hide();
         self.rootNode.addChildNode(reticleNode);
         self.rootNode.addChildNode(self.lightNode);
     }
@@ -69,11 +69,11 @@ extension ToptalARScene {
 
 extension ToptalARScene {
     func showReticle() {
-        self.reticleNode.showReticle();
+        self.reticleNode.show();
     }
 
     func hideReticle() {
-        self.reticleNode.hideReticle();
+        self.reticleNode.hide();
     }
 }
 
