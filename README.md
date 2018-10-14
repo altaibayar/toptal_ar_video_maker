@@ -5,5 +5,5 @@ Blogpost about the app can be found at [https://www.toptal.com/arkit/arkit-demo-
 
 <br />
 <br />
-This sample is published as part of the blog article at [www.toptal.com/blog](https://www.toptal.com/blog) <br />
-Visit [www.toptal.com/blog](https://www.toptal.com/blog) and subscribe to our newsletter to read great posts
+This sample is published as part of the blog article at [https://toptal.com/blog](https://www.toptal.com/blog) <br />
+Visit [https://toptal.com/blog](https://www.toptal.com/blog) and subscribe to our newsletter to read great posts
